@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1500">
+    <title>COVER TO COVER</title>
+    <!--파비콘-->
+    <link rel="shortcut icon" href="./images/COVER-TO-COVER-Favicon.png" type="image/x-icon">
+
+    <!--Pretandard 웹폰트-->
+    <link href="https://webfontworld.github.io/pretendard/Pretendard.css" rel="stylesheet">
+
+     <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="./css/style_1.css">
+</head>
+<body>
+    <div id="top_box">
+        <!--포지션 기준, border-->
+        <div id="top">
+            <!--가운데정렬-->
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./images/logo.png" alt="로고이미지">
+                </a>
+                </a>
+            </div><!--logo-->
+            <div>
+                <input type="search" class="search" placeholder="찾고 싶은 상품을 입력해주세요.">
+            </div>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./images/icon_cart.png" alt="카트아이콘">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/icon_heart.png" alt="하트아이콘">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/icon_login.png" alt="로그인아이콘">
+                    </a>
+                </li>
+            </ul>
+        </div><!--top-->
+    </div><!--top_box-->
+    <div id="header">
+        <!--border-->
+        <div class="header_inner">
+            <!--가운데정렬-->
+            <a href="#" class="icon_category">
+                <img src="./images/icon_category.png" alt="카테고리 아이콘">
+            </a>
+            <ul>
+                <li>
+                    <a href="./sub_1_Books.html">BOOKS</a>
+                </li>
+                <li>
+                    <a href="./sub_2_booklog.html">BOOKLOG</a>
+                </li>
+                <li>
+                    <a href="./sub_3_goods.html">GOODS</a>
+                </li>
+                <li>
+                    <a href="./sub_4_event.html">EVENT</a>
+                </li>
+                <li>
+                    <a href="./sub_5_brand.html">BRAND</a>
+                </li>
+            </ul>
+        </div><!--header_inner-->
+    </div><!--header-->
+    <div id="main_banner">
+        <div class="swiper mb">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <h5>당신도 만나고 싶은 추억 속의 사람이 있나요?<br>
+                        잠들지 않는 꿈과 희망을 좇는 '어른이'들의 이야기!</h5>
+                    <img src="./images/main_banner_1_3.jpg" alt="메인1">
+                </div><!--swiper-slide-->
+                <div class="swiper-slide">
+                    <h5>커버 투 커버 자체 제작 책갈피 출시!</h5>
+                    <img src="./images/main_banner_2_2.jpg" alt="메인2">
+                </div><!--swiper-slide-->˙
+                <div class="swiper-slide">
+                    <h5>2024년 상반기 결산!<br>
+                        상반기 당신의 최고의 책에 투표하세요!</h5>
+                    <img src="./images/main_banner_4_1.jpg" alt="메인3">
+                </div><!--swiper-slide-->
+               
+            </div><!--swiper-wrapper-->
+            <!--기존 swiper-pagination등의 위치 지우고 해당 구조 추가할 것.-->
+            <div class="all-box">
+                <div class="progress-box">
+                    <div class="swiper-pagination"></div>
+                    <div class="autoplay-progress">
+                        <svg viewBox="0 0 100 10">
+                            <line x1="0" y1="0" x2="100" y2="0">
+                        </svg>
+                    </div>
+                </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+               
+            </div>
+        </div><!--swiper-->
+    </div><!--main_banner-->
+    <div id="comment">
+        <h1>BOOK</h1>
+        <div class="comment_inner">
+            <h3>커버들의 기록!</h3>
+            <h2>지금 뜨는 코멘트</h2>
+            <ul>
+                <li>
+                    <div class="green_box">
+                        <div class="b_rotate">
+                            <a href="#" class="img_book">
+                                <img src="./images/main_comment_book_1.png" alt="삶의 반대편에 들판이 있다면 이미지">
+                            </a>
+                            <a href="#" class="img_book_back"><img src="./images/main_comment_book_1_back.png" alt="책 뒷면 이미지"></a>
+                        </div><!--b_rotate-->
+                       
+                            <div class="white_box">
+                                <!-- Swiper -->
+                                <div class="swiper comment_box">
+                                    <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <ul class="slide_content">
+                                            <li class="i_user">
+                                                <a href="#">
+                                                    <img src="./images/profile_1.png" alt="유저아이콘">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="name">치즈냥이</a>
+                                            </li>
+                                            <li>
+                                                <img src="./images/icon_star_five.jpg" alt="별점5점아이콘" class="i_star">
+                                            </li>
+                                        </ul><!--slide_content-->
+                                        <p>
+                                            믿고 보는 문보영 시인의 문장들이 좋다.
+                                        </p>
+                                    </div><!--swiper-slide-->
+                                    <div class="swiper-slide">
+                                        <ul class="slide_content">
+                                            <li class="i_user">
+                                                <a href="#">
+                                                    <img src="./images/profile_2.png" alt="유저아이콘">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="name">야행성부엉이</a>
+                                            </li>
+                                            <li>
+                                                <img src="./images/icon_star_five.jpg" alt="별점5점아이콘" class="i_star">
+                                            </li>
+                                        </ul><!--slide_content-->
+                                        <p>
+                                            자신이 하고있는 일에 대해 더 깊은 탐구와 열정을 쏟아붓는 사람은 언제나 대단하고 멋지다. 덕분에 재밌게 읽으면서도 많이 배우게 된 책이었다.
+                                        </p>
+                                    </div><!--swiper-slide-->
+                                    <div class="swiper-slide">
+                                        <ul class="slide_content">
+                                            <li class="i_user">
+                                                <a href="#">
+                                                    <img src="./images/profile_3.png" alt="유저아이콘">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="name">보통의 책 읽기</a>
+                                            </li>
+                                            <li>
+                                                <img src="./images/icon_star_five.jpg" alt="별점5점아이콘" class="i_star">
+                                            </li>
+                                        </ul><!--slide_content-->
+                                        <p>
+                                            책을 펼친 자리에서 순식간에 거의 다 읽어버렸다. 특유의 유머와 엉뚱한 상상력으로 반짝거리는 문장들이 여전히 매력적이다. 
+                                        </p>
+                                    </div><!--swiper-slide-->
+                                    <div class="swiper-slide">
+                                        <ul class="slide_content">
+                                            <li class="i_user">
+                                                <a href="#">
+                                                    <img src="./images/profile_3.png" alt="유저아이콘">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="name">나비소년</a>
+                                            </li>
+                                            <li>
+                                                <img src="./images/icon_star_five.jpg" alt="별점5점아이콘" class="i_star">
+                                            </li>
+                                        </ul><!--slide_content-->
+                                        <p>
+                                            맑고 예쁜 순간의 기록들.
+                                        </p>
+                                    </div><!--swiper-slide-->
+                                    <div class="swiper-slide">
+                                        <ul class="slide_content">
+                                            <li class="i_user">
+                                                <a href="#">
+                                                    <img src="./images/profile_3.png" alt="유저아이콘">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="name">산들바람</a>
+                                            </li>
+                                            <li>
+                                                <img src="./images/icon_star_five.jpg" alt="별점5점아이콘" class="i_star">
+                                            </li>
+                                        </ul><!--slide_content-->
+                                        <p>
+                                            문보영이 세상에서 글 제일 잘 쓰는 것 같아.
+                                        </p>
+                                    </div><!--swiper-slide-->
+                                    </div><!--swiper-wrapper-->
+                                </div><!--swiper-->
+                            </div><!--white_box-->
+                    </div><!--green_box-->
+                </li>
+                <li>
+                    <div class="purple_box">
+                        <div class="b_rotate">
+                            <a href="#" class="img_book">
+                                <img src="./images/main_comment_book_2.png" alt="다정한 것이 살아남는다 이미지">
+                            </a>
+                            <a href="#" class="img_book_back"><img src="./images/main_comment_book_2_back.png" alt="책 뒷면 이미지"></a>
+                        </div><!--b_rotate-->
+                        <div class="white_box">
+                            <!-- Swiper -->
+                            <div class="swiper comment_box">
+                                <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <ul class="slide_content">
+                                        <li class="i_user">
+                                            <a href="#">
+                                                <img src="./images/profile_1.png" alt="유저아이콘">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="name">책수집가</a>
+                                        </li>
+                                        <li>
+                                            <img src="./images/icon_star_five.jpg" alt="별점5점아이콘" class="i_star">
+                                        </li>
+                                    </ul><!--slide_content-->
+                                    <p>
+                                        점점 더 차가워지는 사회에 살고 있는 사람들이 꼭 읽어보았으면 하는 책입니다.
+                                    </p>
+                                </div><!--swiper-slide-->
+                                <div class="swiper-slide">
+                                    <ul class="slide_content">
+                                        <li class="i_user">
+                                            <a href="#">
+                                                <img src="./images/profile_2.png" alt="유저아이콘">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="name">인조이라이프</a>
+                                        </li>
+                                        <li>
+                                            <img src="./images/icon_star_five.jpg" alt="별점5점아이콘" class="i_star">
+                                        </li>
+                                    </ul><!--slide_content-->
+                                    <p>
+                                        따뜻한 시선으로 바라보는 생존에 대한 감성을 지닌 과학 교양 도서가 아닐까 함.
+                                    </p>
+                                </div><!--swiper-slide-->
+                                <div class="swiper-slide">
+                                    <ul class="slide_content">
+                                        <li class="i_user">
+                                            <a href="#">
+                                                <img src="./images/profile_3.png" alt="유저아이콘">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="name">허브브</a>
+                                        </li>
+                                        <li>
+                                            <img src="./images/icon_star_five.jpg" alt="별점5점아이콘" class="i_star">
+                                        </li>
+                                    </ul><!--slide_content-->
+                                    <p>
+                                        사람과 사람 사이의 '정'이 점점 줄어들고 있는 요즘 생각하며 읽어볼 수 있어 좋아요.
+                                    </p>
+                                </div><!--swiper-slide-->
+                                <div class="swiper-slide">
+                                    <ul class="slide_content">
+                                        <li class="i_user">
+                                            <a href="#">
+                                                <img src="./images/profile_3.png" alt="유저아이콘">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="name">페이지러너</a>
+                                        </li>
+                                        <li>
+                                            <img src="./images/icon_star_five.jpg" alt="별점5점아이콘" class="i_star">
+                                        </li>
+                                    </ul><!--slide_content-->
+                                    <p>
+                                        화의 원동력은 다정함이다.라는 자기가축화 가설을 통해 친절함, 다정함이 최고의 생존 전략임을 정연한 논리로 설명해 주는 책입니다.
+                                    </p>
+                                </div><!--swiper-slide-->
+                                <div class="swiper-slide">
+                                    <ul class="slide_content">
+                                        <li class="i_user">
+                                            <a href="#">
+                                                <img src="./images/profile_3.png" alt="유저아이콘">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="name">책바다</a>
+                                        </li>
+                                        <li>
+                                            <img src="./images/icon_star_five.jpg" alt="별점5점아이콘" class="i_star">
+                                        </li>
+                                    </ul><!--slide_content-->
+                                    <p>
+                                        경쟁 사회 속에서 살아남기 위해서 항상 다른 개체와 경쟁하고 먼저 적응하고 혼자 앞서가야 한다는 긴장과 스트레스에서 구원해 주는 책.
+
+                                    </p>
+                                </div><!--swiper-slide-->
+                                </div><!--swiper-wrapper-->
+                            </div><!--swiper-->
+                        </div><!--white_box-->
+                    </div><!--purple_box-->
+                </li>
+                <li>
+                    <div class="blue_box">
+                        <div class="b_rotate">
+                            <a href="#" class="img_book">
+                                <img src="./images/main_comment_book_3.png" alt="무해한 복숭아 이미지">
+                            </a>
+                            <a href="#" class="img_book_back"><img src="./images/main_comment_book_3_back.png" alt="책 뒷면 이미지"></a>
+                        </div><!--b_rotate-->
+                        <div class="white_box">
+                            <!-- Swiper -->
+                            <div class="swiper comment_box">
+                                <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <ul class="slide_content">
+                                        <li class="i_user">
+                                            <a href="#">
+                                                <img src="./images/profile_3.png" alt="유저아이콘">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="name">서재의탐험가</a>
+                                        </li>
+                                        <li>
+                                            <img src="./images/icon_star_five.jpg" alt="별점5점아이콘" class="i_star">
+                                        </li>
+                                    </ul><!--slide_content-->
+                                    <p>
+                                        담백하고 은은하게 사랑을 잘 풀어낸 제목 그대로 무해한 시들의 집합이에요.
+                                    </p>
+                                </div><!--swiper-slide-->
+                                <div class="swiper-slide">
+                                    <ul class="slide_content">
+                                        <li class="i_user">
+                                            <a href="#">
+                                                <img src="./images/profile_2.png" alt="유저아이콘">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="name">부지런한사색가</a>
+                                        </li>
+                                        <li>
+                                            <img src="./images/icon_star_five.jpg" alt="별점5점아이콘" class="i_star">
+                                        </li>
+                                    </ul><!--slide_content-->
+                                    <p>
+                                        문장들이 여성스럽고, 소녀스러우면서 깨끗하고 무해한 느낌들이에요.
+                                    </p>
+                                </div><!--swiper-slide-->
+                                <div class="swiper-slide">
+                                    <ul class="slide_content">
+                                        <li class="i_user">
+                                            <a href="#">
+                                                <img src="./images/profile_1.png" alt="유저아이콘">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="name">호이호이</a>
+                                        </li>
+                                        <li>
+                                            <img src="./images/icon_star_five.jpg" alt="별점5점아이콘" class="i_star">
+                                        </li>
+                                    </ul><!--slide_content-->
+                                    <p>
+                                        수필+시 가 합치면 이런 느낌일까? 첫사랑 재질의 몽글몽글한 시집. 여름밤에 읽기 좋아요.
+                                    </p>
+                                </div><!--swiper-slide-->
+                                <div class="swiper-slide">
+                                    <ul class="slide_content">
+                                        <li class="i_user">
+                                            <a href="#">
+                                                <img src="./images/profile_1.png" alt="유저아이콘">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="name">빵과커피</a>
+                                        </li>
+                                        <li>
+                                            <img src="./images/icon_star_five.jpg" alt="별점5점아이콘" class="i_star">
+                                        </li>
+                                    </ul><!--slide_content-->
+                                    <p>
+                                        여름을 기다리며 읽는 시집. 세상을 바라보는 아름다운 눈길들.
+                                    </p>
+                                </div><!--swiper-slide-->
+                                <div class="swiper-slide">
+                                    <ul class="slide_content">
+                                        <li class="i_user">
+                                            <a href="#">
+                                                <img src="./images/profile_1.png" alt="유저아이콘">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="name">초코나루</a>
+                                        </li>
+                                        <li>
+                                            <img src="./images/icon_star_five.jpg" alt="별점5점아이콘" class="i_star">
+                                        </li>
+                                    </ul><!--slide_content-->
+                                    <p>
+                                        이은규 시인의 시집은 달콤하고, 상쾌하다.
+                                    </p>
+                                </div><!--swiper-slide-->
+                                </div><!--swiper-wrapper-->
+                            </div><!--swiper-->
+                        </div><!--white_box-->
+                    </div><!--blue_box-->
+                </li>
+            </ul>
+            <div class="more_btn">
+                <a href="#">더보기<img src="./images/icon_right-arrow.png" alt="화살표 이미지"></a>
+            </div><!--more_btn-->
+        </div><!--comment_inner-->
+    </div><!--comment-->
+    <div id="today">
+        <!--가운데정렬-->
+        <div class="today_inner">
+
+            <h3>커버가 엄선한</h3>
+            <h2>오늘의 추천 도서</h2>
+            <div class="today_box">
+
+            
+                <!--탭 시작-->
+                <!--탭 메뉴 영역(우리가 실제로 클릭할 부분)
+                각각의 li안에 a태그의 아이디를 가진 tab이 보이는 원리이다.
+                -->
+                <ul class="tabs">
+                    <li><a href="#tab1">종합</a></li>
+                    <li><a href="#tab2">시/에세이</a></li>
+                    <li><a href="#tab3">소설</a></li>
+                    <li><a href="#tab4">경제/경영</a></li>
+                    <li><a href="#tab5">자기계발</a></li>
+                    <li><a href="#tab6">인문/교양</a></li>
+                    <li><a href="#tab7">기타</a></li>
+                </ul>
+
+                <!--탭 콘텐츠 영역(tabs를 눌렀을때 변화할 내용들이 들어있는 곳) 모든 tab내용은, 각각 다른아이디를 갖고 있어야 하고, 같은 tab-content라는 클래스를 가지고 있어야 합니다.-->
+                <div class="tab_container">
+
+                    <div id="tab1" class="tab_content">
+                        <!--Content-->
+                        <div class="recommend_box">
+                            <div class="r_b_img_box t_bg1">
+                                <a href="#">
+                                    <img src="./images/main_today_book_1.png" alt="눈부신 안부 책 이미지">
+                                </a>
+                            </div><!--r_b_img_box-->
+                            <div class="r_text_box">
+                                <ul class="r_text_box_inner">
+                                    <li>
+                                        <a href="#"><img src="./images/icon_profile_1.png" alt="유저아이콘"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="name">아낌없이 주는 나무</a>
+                                    </li>
+                                </ul>
+                                <p class="re_sentence">
+                                    "만약에 네가 무인도에 혼자 갇혀 있다고 생각해 봐. 밤이 되었는데 저 멀리 수평선 가까이에서 불빛이 보이고. 그러면 너는 너무 멀어서 네가 보이지 않을 거란 걸 알면서도. 무언가를 하지 않을까? 단 하나밖에 없는 성냥이라도 그어서 신호를 보내려고 하겠지. 간절하다는 건 그런 거니까"
+                                </p>
+                                <div class="re_point">
+                                    <ul>
+                                        <li>
+                                            <img src="./images/icon_check.png" alt="체크아이콘">
+                                        </li>
+                                        <li class="re_text">
+                                            <p>
+                                                따뜻한 이야기를 읽고 싶다면!
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="./images/icon_check.png" alt="체크아이콘">
+                                        </li>
+                                        <li class="re_text">
+                                            <p>
+                                                감정을 자극하는 작가!
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div><!--re_point-->
+                            </div><!--r_text_box-->
+                        </div><!--recommend_box-->
+                    </div><!--tab1-->
+                    <div id="tab2" class="tab_content">
+                        <!--Content-->
+                        <div class="recommend_box">
+                            <div class="r_b_img_box t_bg2">
+                                <a href="#">
+                                    <img src="./images/main_today_book_2.png" alt="모래알만 한 진실이라도 책 이미지">
+                                </a>
+                            </div><!--r_b_img_box-->
+                            <div class="r_text_box">
+                                <ul class="r_text_box_inner">
+                                    <li>
+                                        <a href="#"><img src="./images/icon_profile_1.png" alt="유저아이콘"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="name">초코케이크</a>
+                                    </li>
+                                </ul>
+                                <p class="re_sentence">
+                                    이왕이면 내 인생의 결말이 해피엔드였으면 한다. 분꽃이나 채송화 따위 그 속절없는 것들의 소멸이 슬플 것도 드라마틱할 것도 없는 자연스러운 해피엔드이듯이.
+                                </p>
+                                <div class="re_point">
+                                    <ul>
+                                        <li>
+                                            <img src="./images/icon_check.png" alt="체크아이콘">
+                                        </li>
+                                        <li class="re_text">
+                                            <p>명화와 함께 보고 읽는 힐링도서</p>
+                                        </li>
+                                        <li>
+                                            <img src="./images/icon_check.png" alt="체크아이콘">
+                                        </li>
+                                        <li class="re_text">
+                                            <p>
+                                                따뜻한 이야기가 필요하다면!
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div><!--re_point-->
+                            </div><!--r_text_box-->
+                        </div><!--recommend_box-->
+
+                    </div><!--tab2-->
+
+                    <div id="tab3" class="tab_content">
+                        <!--Content-->
+                        <div class="recommend_box">
+                            <div class="r_b_img_box t_bg3">
+                                <a href="#">
+                                    <img src="./images/main_today_book_3.png" alt="소년이 온다 책 이미지">
+                                </a>
+                            </div><!--r_b_img_box-->
+                            <div class="r_text_box">
+                                <ul class="r_text_box_inner">
+                                    <li>
+                                        <a href="#"><img src="./images/icon_profile_1.png" alt="유저아이콘"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="name">
+                                            푸른바다
+                                        </a>
+                                    </li>
+                                </ul>
+                                <p class="re_sentence">
+                                    당신이 죽은 뒤 장례식을 치르지 못해,
+                                    내 삶이 장례식이 되었습니다.
+                                </p>
+                                <div class="re_point">
+                                    <ul>
+                                        <li>
+                                            <img src="./images/icon_check.png" alt="체크아이콘">
+                                        </li>
+                                        <li class="re_text">
+                                            <p>
+                                                펑펑 울고 싶은 날이라면!
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="./images/icon_check.png" alt="체크아이콘">
+                                        </li>
+                                        <li class="re_text">
+                                            <p>
+                                                스스로 생각하게 되는 책
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div><!--re_point-->
+                            </div><!--r_text_box-->
+                        </div><!--recommend_box-->
+
+                    </div><!--tab3-->
+
+                    <div id="tab4" class="tab_content">
+                        <!--Content-->
+                        <div class="recommend_box">
+                            <div class="r_b_img_box t_bg4">
+                                <a href="#">
+                                    <img src="./images/main_today_book_4.png" alt="미움받을 용기 책 이미지">
+                                </a>
+                            </div><!--r_b_img_box-->
+                            <div class="r_text_box">
+                                <ul class="r_text_box_inner">
+                                    <li>
+                                        <a href="#"><img src="./images/icon_profile_1.png" alt="유저아이콘"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="name">책이좋아</a>
+                                    </li>
+                                </ul>
+                                <p class="re_sentence">
+                                    자네가 불행한 것은 과거의 환경 탓이 아니네. 그렇다고 능력이 부족해서도 아니고, 자네에게는 그저 용기가 부족한 것뿐이야.
+                                </p>
+                                <div class="re_point">
+                                    <ul>
+                                        <li>
+                                            <img src="./images/icon_check.png" alt="체크아이콘">
+                                        </li>
+                                        <li class="re_text">
+                                            <p>
+                                                깨달음이 필요할 때
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="./images/icon_check.png" alt="체크아이콘">
+                                        </li>
+                                        <li class="re_text">
+                                            <p>
+                                                인간관계를 돌아보고 싶을 때
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div><!--re_point-->
+                            </div><!--r_text_box-->
+                        </div><!--recommend_box-->
+                    </div><!--tab4-->
+                    <div id="tab5" class="tab_content">
+                        <!--Content-->
+                        <div class="recommend_box">
+                            <div class="r_b_img_box t_bg5">
+                                <a href="#">
+                                    <img src="./images/main_today_book_5.png" alt="우리는 모두 죽는다는 것을 기억해라 책 이미지">
+                                </a>
+                            </div><!--r_b_img_box-->
+                            <div class="r_text_box">
+                                <ul class="r_text_box_inner">
+                                    <li>
+                                        <a href="#"><img src="./images/icon_profile_1.png" alt="유저아이콘"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="name">민트초코코</a>
+                                    </li>
+                                </ul>
+                                <p class="re_sentence">
+                                    가지고 있지 않은 것을 나눠줄 수는 없다. 나에 대한 사랑을 갖고 있지 않으면 타인을 사랑할 수 없다.따라서 자기 자신을 사랑하는 것이 가장 중요하다.
+                                </p>
+                                <div class="re_point">
+                                    <ul>
+                                        <li>
+                                            <img src="./images/icon_check.png" alt="체크아이콘">
+                                        </li>
+                                        <li class="re_text">
+                                            <p>
+                                                삶을 되돌아보게 되는 책
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="./images/icon_check.png" alt="체크아이콘">
+                                        </li>
+                                        <li class="re_text">
+                                            <p>
+                                                마음 공부가 필요할 때
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div><!--re_point-->
+                            </div><!--r_text_box-->
+                        </div><!--recommend_box-->
+                    </div><!--tab5-->
+                    <div id="tab6" class="tab_content">
+                        <!--Content-->
+                        <div class="recommend_box">
+                            <div class="r_b_img_box t_bg6">
+                                <a href="#">
+                                    <img src="./images/main_today_book_6.png" alt="왜 일하는가 책 이미지">
+                                </a>
+                            </div><!--r_b_img_box-->
+                            <div class="r_text_box">
+                                <ul class="r_text_box_inner">
+                                    <li>
+                                        <a href="#"><img src="./images/icon_profile_1.png" alt="유저아이콘"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="name">코히</a>
+                                    </li>
+                                </ul>
+                                <p class="re_sentence">
+                                    이 단지 바람으로만 그쳐서는 절대로 이룰 수 없다, 꿈만 꿀 게 아니라 오늘 당장 남보다 더 자주 몸을 움직여야 하고, 내일 반드시 이루어야 할 구체적인 목표를 세워야 한다.
+                                </p>
+                                <div class="re_point">
+                                    <ul>
+                                        <li>
+                                            <img src="./images/icon_check.png" alt="체크아이콘">
+                                        </li>
+                                        <li class="re_text">
+                                            <p>
+                                                무기력한 날들의 연속이 라면
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="./images/icon_check.png" alt="체크아이콘">
+                                        </li>
+                                        <li class="re_text">
+                                            <p>
+                                                살아가는 이유를 다시 한번 생각하고 싶을 때
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div><!--re_point-->
+                            </div><!--r_text_box-->
+                        </div><!--recommend_box-->
+                    </div><!--tab6-->
+                    <div id="tab7" class="tab_content">
+                        <!--Content-->
+                        <div class="recommend_box">
+                            <div class="r_b_img_box t_bg7">
+                                <a href="#">
+                                    <img src="./images/main_today_book_7.png" alt="괜찮아, 그 길 끝에 행복이 기다릴 거야 책 이미지">
+                                </a>
+                            </div><!--r_b_img_box-->
+                            <div class="r_text_box">
+                                <ul class="r_text_box_inner">
+                                    <li>
+                                        <a href="#"><img src="./images/icon_profile_1.png" alt="유저아이콘"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="name">하트뿅</a>
+                                    </li>
+                                </ul>
+                                <p class="re_sentence">
+                                    산티아고 길을 언제 걸을 것인지는 당신의 선택이 아니다. 그 길은, 때가 되면 당신을 부를 것이다.
+                                </p>
+                                <div class="re_point">
+                                    <ul>
+                                        <li>
+                                            <img src="./images/icon_check.png" alt="체크아이콘">
+                                        </li>
+                                        <li class="re_text">
+                                            <p>
+                                                어디론가 떠나고 싶을 때
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="./images/icon_check.png" alt="체크아이콘">
+                                        </li>
+                                        <li class="re_text">
+                                            <p>
+                                                쉽게 읽을 수 있는 책
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div><!--re_point-->
+                            </div><!--r_text_box-->
+                        </div><!--recommend_box-->
+                    </div><!--tab4-->
+                </div><!--tab_container-->
+                <!--탭 끝-->
+                </div><!--today_box-->
+            <div class="more_btn">
+                <a href="#">더보기<img src="./images/icon_right-arrow.png" alt="화살표 이미지"></a>
+            </div><!--more_btn-->
+        </div><!--today_inner-->
+    </div><!--today-->
+    <div id="ctc_slide">
+    </div><!--ctc_slide-->
+
+
+
+    <div id="best_seller">
+        <div class="best_seller_inner">
+            <div class="b_left_box">
+                <div class="sticky_box">
+                    <h3>가장 인기 있는 도서를 만나보세요.</h3>
+                    <h2>BEST SELLER</h2>
+                    <img src="./images/best_logo.png" alt="로고 이미지2">
+                </div><!--sticky_box-->
+
+            </div><!--b_left_box-->
+            <div class="b_right_box">
+                <ul>
+                    <li class="rb_padding">
+                        <a href="#">
+                            <img src="./images/main_best_book_1.png" alt="방금 떠나온 세계 이미지">
+                        <p class="b_genre">소설
+                           </p>
+                        <p class="b_title">방금 떠나온 세계</p>
+                        <p class="b_writer"> 김초엽 · 한겨레출판사</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/main_best_book_2.png" alt="모든 삶은 흐른다 이미지">
+                            <p class="b_genre">인문</p>
+                            <p class="b_title">나를 소모하지 않는 현명한 태도에 대하여</p>
+                            <p class="b_writer">마티아스 뇔케 · 퍼스트펭귄 </p>
+                        </a>
+                    </li>
+                    <li class="rb_padding">
+                        <a href="#"><img src="./images/main_best_book_3.png" alt="율의 시선 이미지">
+                        <p class="b_genre">소설</p>
+                        <p class="b_title">율의 시선</p>
+                        <p class="b_writer">김민서 · 창비</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/main_best_book_4.png" alt="돈의 속성 이미지">
+                        <p class="b_genre">경제/경영</p>
+                        <p class="b_title">돈의 속성</p>
+                        <p class="b_writer">김승호 · 스노우폭스북스</p>
+                        </a>
+                    </li>
+                    <li class="rb_padding">
+                        <a href="#"><img src="./images/main_best_book_5.png" alt="호호호 이미지">
+                        <p class="b_genre">에세이</p>
+                        <p class="b_title">호호호</p>
+                        <p class="b_writer">윤가은 · 마음산책</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/main_best_book_6.png" alt="세이노의 가르침 이미지">
+                        <p class="b_genre">소설</p>
+                        <p class="b_title">해리 포터와 마법사의 돌 1</p>
+                        <p class="b_writer">J. K. 롤링 저자(글) · 문학수첩</p>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="view_more_btn">VIEW MORE</a>
+            </div><!--b_right_box-->
+        </div><!--best_book_inner-->
+    </div><!--best_book-->
+    <div id="new_book">
+        <!--배경색-->
+        <div class="new_book_inner">
+            <!--가운데정렬-->
+            <h3>화제의 신작을 만나보세요.</h3>
+            <h2>NEW</h2>
+            <div class="new_book_slide">
+                <!--마진오토-->
+                    <div class="swiper nb_card"><!--swiper는 필수 클래스, 그 옆의 클래스는 보조 클래스-->
+                        <div class="swiper-wrapper"><!--swiper-wrapper는 필수 클래스-->
+                            <div class="swiper-slide">
+                                <!--swiper-slide는 필수 클래스-->
+                                <img src="./images/main_new_book_1.png" alt="메인배너1">
+                                <p class="n_genre">소설</p>
+                                <p class="n_title">마지막 지도 제작자</p>
+                                <p class="n_writer">크리스티나 순톤밧 · 책읽는곰</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/main_new_book_2.png" alt="메인배너2">
+                                <p class="n_genre">소설</p>
+                                <p class="n_title">김섬과 박혜람</p>
+                                <p class="n_writer">임택수 · 나무옆의자</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/main_new_book_3.png" alt="메인배너3">
+                                <p class="n_genre">에세이</p>
+                                <p class="n_title">아무튼, 디지몬</p>
+                                <p class="n_writer">천선란 · 위고</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/main_new_book_4.png" alt="메인배너4">
+                                <p class="n_genre">
+                                    에세이</p>
+                                <p class="n_title">어느 하루 눈부시지 않은 날이 없었습니다</p>
+                                <p class="n_writer">정덕현 · 페이지2북스</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/main_new_book_5.png" alt="메인배너5">
+                                <p class="n_genre">소설</p>
+                                <p class="n_title">두 사람의 인터내셔널</p>
+                                <p class="n_writer">김기태 · 문학동네</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/main_new_book_6.png" alt="메인배너5">
+                                <p class="n_genre">
+                                    소설</p>
+                                <p class="n_title">쓰게 될 것</p>
+                                <p class="n_writer">최진영 · 안온북스</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/main_new_book_7.png" alt="메인배너5">
+                                <p class="n_genre">에세이</p>
+                                <p class="n_title">제철 행복</p>
+                                <p class="n_writer">김신지 · 인플루엔셜
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/main_new_book_8.png" alt="메인배너5">
+                                <p class="n_genre">소설</p>
+                                <p class="n_title">리버보이</p>
+                                <p class="n_writer">팀 보울러 · 다산책방</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/main_new_book_9.png" alt="메인배너5">
+                                <p class="n_genre">소설</p>
+                                <p class="n_title">동경</p>
+                                <p class="n_writer">김화진 · 문학동네</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/main_new_book_10.png" alt="메인배너5">
+                                <p class="n_genre">기타</p>
+                                <p class="n_title">디디미니의 맛있어서 평생 습관 되는 다이어트 레시피</p>
+                                <p class="n_writer">박지우 · 빅피시</p>
+                            </div>
+                        </div>
+                    </div><!--mb E-->  
+                    <!--화살표추가-->
+                    <div class="swiper-button-next nb_next"></div>
+                    <div class="swiper-button-prev nb_prev"></div>
+                </div><!--new_book_slide-->
+                <div class="more_btn">
+                    <a href="#">더보기<img src="./images/icon_right-arrow.png" alt="화살표 이미지"></a>
+                </div><!--more_btn-->
+        </div><!--new_book_inner-->
+    </div><!--new_book-->
+    <div id="ad">
+        <a href="#"></a>
+    </div><!--ad-->
+    <div id="goods_best">
+        <!--border-->
+            <h1>GOODS</h1>
+        <div class="goods_best_inner">
+            <!--가운데정렬-->
+  
+            <h3>가장 인기 있는 상품을 만나보세요.</h3>
+            <h2 class="h2_pad">BEST</h2>
+            <div class="more_btn">
+                <a href="#">더보기<img src="./images/icon_right-arrow.png" alt="화살표 이미지"></a>
+            </div><!--more_btn-->
+        </div><!--goods_best_inner-->
+             <!-- Swiper -->
+             <div class="swiper b_goods">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/best_goods_1.jpg" alt="굿즈 이미지1">
+                        <p class="bg_name">노트</p>
+                        <p class="bg_price">6,500원</p>
+                        <a href="#" class="bg_heart"><img src="./images/icon_heart_red_28px.png" alt="하트아이콘"></a>
+                    </div><!--swiper-slide-->
+                    <div class="swiper-slide">
+                        <img src="./images/best_goods_2.jpg" alt="굿즈 이미지2">
+                        <p class="bg_name">[책갈피] 세잎 클로버와 나뭇잎</p>
+                        <p class="bg_price">6,500원</p>
+                        <a href="#" class="bg_heart"><img src="./images/icon_heart_red_28px.png" alt="하트아이콘"></a>
+                    </div><!--swiper-slide-->
+                    <div class="swiper-slide">
+                        <img src="./images/best_goods_3.jpg" alt="굿즈 이미지3">
+                        <p class="bg_name">에코백</p>
+                        <p class="bg_price">6,500원</p>
+                        <a href="#" class="bg_heart"><img src="./images/icon_heart_red_28px.png" alt="하트아이콘"></a>
+                    </div><!--swiper-slide-->
+                    <div class="swiper-slide">
+                        <img src="./images/best_goods_4.jpg" alt="굿즈 이미지4">
+                        <p class="bg_name">책갈피</p>
+                        <p class="bg_price">6,500원</p>
+                        <a href="#" class="bg_heart"><img src="./images/icon_heart_red_28px.png" alt="하트아이콘"></a>
+                    </div><!--swiper-slide-->
+                    <div class="swiper-slide">
+                        <img src="./images/best_goods_1.jpg" alt="굿즈 이미지1">
+                        <p class="bg_name">노트</p>
+                        <p class="bg_price">6,500원</p>
+                        <a href="#" class="bg_heart"><img src="./images/icon_heart_red_28px.png" alt="하트아이콘"></a>
+                    </div><!--swiper-slide-->
+                    <div class="swiper-slide">
+                        <img src="./images/best_goods_1.jpg" alt="굿즈 이미지1">
+                        <p class="bg_name">노트</p>
+                        <p class="bg_price">6,500원</p>
+                        <a href="#" class="bg_heart"><img src="./images/icon_heart_red_28px.png" alt="하트아이콘"></a>
+                    </div><!--swiper-slide-->
+                    <div class="swiper-slide">
+                        <img src="./images/best_goods_2.jpg" alt="굿즈 이미지2">
+                        <p class="bg_name">[책갈피] 세잎 클로버와 나뭇잎</p>
+                        <p class="bg_price">6,500원</p>
+                        <a href="#" class="bg_heart"><img src="./images/icon_heart_red_28px.png" alt="하트아이콘"></a>
+                    </div><!--swiper-slide-->
+                    <div class="swiper-slide">
+                        <img src="./images/best_goods_3.jpg" alt="굿즈 이미지3">
+                        <p class="bg_name">에코백</p>
+                        <p class="bg_price">6,500원</p>
+                        <a href="#" class="bg_heart"><img src="./images/icon_heart_red_28px.png" alt="하트아이콘"></a>
+                    </div><!--swiper-slide-->
+                    <div class="swiper-slide">
+                        <img src="./images/best_goods_4.jpg" alt="굿즈 이미지4">
+                        <p class="bg_name">책갈피</p>
+                        <p class="bg_price">6,500원</p>
+                        <a href="#" class="bg_heart"><img src="./images/icon_heart_red_28px.png" alt="하트아이콘"></a>
+                    </div><!--swiper-slide-->
+                    <div class="swiper-slide">
+                        <img src="./images/best_goods_1.jpg" alt="굿즈 이미지1">
+                        <p class="bg_name">노트</p>
+                        <p class="bg_price">6,500원</p>
+                        <a href="#" class="bg_heart"><img src="./images/icon_heart_red_28px.png" alt="하트아이콘"></a>
+                    </div><!--swiper-slide-->
+                </div><!--slide-wrapper-->
+    </div><!--goods_best-->
+    <div id="goods_new">
+        <!--가운데정렬-->
+        <div class="gn_inner">
+            <h3>신제품을 만나보세요.</h3>
+            <h2>NEW</h2>
+            <div class="gn_item_box">
+            <!-- Swiper -->
+            <div class="swiper n_item">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide ng_slide">
+                    <img src="./images/new_goods_1.png" alt="신상 굿즈 이미지1">
+                    <div class="ng_white_box">
+                        <p class="ng_made">커버투커버</p>
+                        <p class="ng_name">커버투커버 에코백</p>
+                        <p class="ng_price">20,000원</p>
+                        <ul>
+                            <li>
+                                <a href="#"><img src="./images/icon_heart_red.png" alt="하트아이콘"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/icon_cart_25px.png" alt="카트아이콘"></a>
+                            </li>
+                        </ul>
+                    </div><!--n_white_box-->
+                </div><!--swiper-slide-->
+                <div class="swiper-slide ng_slide">
+                    <img src="./images/new_goods_2.png" alt="신상 굿즈 이미지1">
+                    <div class="ng_white_box">
+                        <p class="ng_made">커버투커버</p>
+                        <p class="ng_name">커버투커버 에코백</p>
+                        <p class="ng_price">20,000원</p>
+                        <ul>
+                            <li>
+                                <a href="#"><img src="./images/icon_heart_red.png" alt="하트아이콘"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/icon_cart_25px.png" alt="카트아이콘"></a>
+                            </li>
+                        </ul>
+                    </div><!--n_white_box-->
+                </div><!--swiper-slide-->
+                <div class="swiper-slide ng_slide">
+                    <img src="./images/new_goods_3.png" alt="신상 굿즈 이미지1">
+                    <div class="ng_white_box">
+                        <p class="ng_made">커버투커버</p>
+                        <p class="ng_name">커버투커버 에코백</p>
+                        <p class="ng_price">20,000원</p>
+                        <ul>
+                            <li>
+                                <a href="#"><img src="./images/icon_heart_red.png" alt="하트아이콘"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/icon_cart_25px.png" alt="카트아이콘"></a>
+                            </li>
+                        </ul>
+                    </div><!--n_white_box-->
+                </div><!--swiper-slide-->
+                <div class="swiper-slide ng_slide">
+                    <img src="./images/new_goods_1.png" alt="신상 굿즈 이미지1">
+                    <div class="ng_white_box">
+                        <p class="ng_made">커버투커버</p>
+                        <p class="ng_name">커버투커버 에코백</p>
+                        <p class="ng_price">20,000원</p>
+                        <ul>
+                            <li>
+                                <a href="#"><img src="./images/icon_heart_red.png" alt="하트아이콘"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/icon_cart_25px.png" alt="카트아이콘"></a>
+                            </li>
+                        </ul>
+                    </div><!--n_white_box-->
+                </div><!--swiper-slide-->
+                </div><!--swiper-wrapper-->
+            </div><!--swiper-->
+            </div><!--gn_item_box-->
+            <div class="more_btn">
+                <a href="#">더보기<img src="./images/icon_right-arrow.png" alt="화살표 이미지"></a>
+            </div><!--more_btn-->
+        </div><!--gn_inner-->
+    </div><!--goods_new-->
+    <div id="event">
+        <!--가운데 정렬-->
+        <h2>Event</h2>
+        <a href="#"><img src="./images/banner_event.png" alt="이벤트배너 이미지"></a>
+    </div><!--event-->
+    <div id="footer">
+        <!--border-->
+        <div class="footer_inner1">
+        <div class="footer_inner2">
+            <div class="f_logo">
+                <a href="#"><img src="./images/logo.png" alt="로고이미지"></a>
+            </div><!--f_logo-->
+            <div class="f_text_box">
+                <div class="f_left_text">
+                    <a href="#">ABOUT</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">공지사항</a>
+                </div>
+                <div class="f_right_text">
+                    <ul>
+                        <li><p>커버투커버</p></li>
+                        <li><p>대표자 : 원수빈</p></li>
+                    </ul>
+                    <p>주소 : 부산광역시 중구 중앙대로 26 </p>
+                    <p>E-mail : w.design.archive@gmail.com </p>
+                    <p>TEL : 010.3909.7786</p>
+                </div>
+            </div><!--f_text_box-->
+        </div><!--footer_inner2-->
+            <a href="#" class="f_pad">개인정보처리방침</a>
+            <a href="#">이용약관 </a>
+            <p>Copyright © COVER TO COVER. All rights reserved.</p>
+        </div><!--footer_inner1-->
+    </div><!--footer-->
+    <a href="#top" class="top_btn">
+        <img src="./images/top_btn_icon.png" alt="top버튼이미지">
+    </a>
+
+
+
+
+
+
+     <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!--메인 스와이퍼-->
+  <!-- Initialize Swiper -->
+    <!--script 내용 변경됨.-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!--script 내용 변경됨.-->
+    <script>
+        const progressLine = document.querySelector('.autoplay-progress svg')
+        const mainSwiper = new Swiper(".mb", {
+            // 무한 슬라이드
+            loop: true,
+
+            //자동 재생
+            autoplay: {
+                delay: 5500,/*이미지가 변경될 시간 설정*/
+                disableOnInteraction: false,
+            },
+
+            // bullet
+            pagination: {
+                el: ".mb .swiper-pagination",
+                clickable: false,
+                type: "custom",
+                renderCustom: function(swiper, current, total) {
+                    return (
+                        '<span class="current">' + 0 + (current) + '</span>' + '<span class="total">' + 0 + (total) + '</span>'
+                    );
+                }
+            },
+
+            //arrow
+            navigation: {
+                nextEl: ".mb .swiper-button-next",
+                prevEl: ".mb .swiper-button-prev",
+            },
+
+            on: {
+                autoplayTimeLeft(s, time, progress) {
+                    progressLine.style.setProperty("--progress", 1 - progress)
+                }
+            }
+        });
+    </script>
+
+    <!--comment vertical swiper--> 
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".comment_box", {
+          direction: "vertical",
+          
+          autoplay: {
+        delay: 2000,
+        disableOnInteraction: false
+         },
+        });
+        
+      </script>
+
+
+    <!-- Initialize Swiper --><!--옵션부분 pdf파일 참조해주세요-->
+    <script>
+        var swiper = new Swiper(".nb_card", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                },//화살표를 작동하게 하는 옵션.
+                autoplay: {
+                    delay: 2000,
+                    /*이미지가 자동으로 넘어가는 시간설정. 1000 = 1초*/
+                    disableOnInteraction: false,
+                },
+                loop: true,
+                slidesPerView: 5,
+                centeredSlides:true,
+                spaceBetween: 30,
+        });//지우면 안되요!
+    </script>
+
+    <!--best_goods Swiper --><!--옵션부분 pdf파일 참조해주세요-->
+    <script>
+        var swiper = new Swiper(".b_goods", {
+
+                loop: true,
+                slidesPerView: 6,
+                spaceBetween: 20,
+        });//지우면 안되요!
+        
+        </script>
+
+     <!-- new_goods Swiper -->
+    <script>
+        var swiper = new Swiper(".n_item", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        centeredSlides: true,
+            loop: true,speed:1000,
+        });
+        
+    </script>
+        
+
+        
+    <!--탭 제이쿼리 라이브러리-->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    
+    <!--탭 js-->
+    <script src="./js/tab.js"></script>
+    <script>
+        const book = document.getElementById('book');
+        book.addEventListener('click', function() {
+        book.querySelector('.pages').classList.toggle('opened');
+        });
+    </script>
+ 
+ <script src="./js/background_change.js"></script>
+ 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ <script>
+   // Hide Header on on scroll down
+   var didScroll;
+   var lastScrollTop = 0;
+   var delta = 5;
+   var navbarHeight = $('#header').outerHeight();
+
+   $(window).scroll(function (event) {
+     didScroll = true;
+   });
+
+   setInterval(function () {
+     if (didScroll) {
+       hasScrolled();
+       didScroll = false;
+     }
+   }, 250);
+
+   function hasScrolled() {
+     var st = $(this).scrollTop();
+
+     // Make sure they scroll more than delta
+     if (Math.abs(lastScrollTop - st) <= delta)
+       return;
+
+     // If they scrolled down and are past the navbar, add class .nav-up.
+     // This is necessary so you never see what is "behind" the navbar.
+     if (st > lastScrollTop && st > navbarHeight) {
+       // Scroll Down
+       $('#top_box').removeClass('nav-down').addClass('nav-up');
+     } else {
+       // Scroll Up
+       if (st + $(window).height() < $(document).height()) {
+         $('#top_box').removeClass('nav-up').addClass('nav-down');
+       }
+     }
+
+     lastScrollTop = st;
+   }
+
+
+ </script>
+
+</body>
+</html>

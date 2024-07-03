@@ -1,0 +1,431 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+ul, ol{ 
+    list-style: none;
+}
+img, video, iframe{
+    vertical-align: middle;
+}
+body{
+    min-width: 1500px;
+    font-family: 'Pretendard';
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+}
+/*top*/
+#top_box{
+    border-bottom: 2px solid #333;
+}
+#top{
+    width: 1432px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#top ul{
+    display: flex;
+} 
+#top ul li{
+    padding-right: 30px;
+}
+.logo{
+    padding: 20px 0;
+
+}
+.search{
+    width: 570px;
+    height: 55px;
+    border: 3px solid #000;
+    border-radius: 29px;
+    padding: 20px;
+    padding-left: 30px;
+    outline-style: none;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/icon_search.png);
+    background-repeat: no-repeat;
+    background-position: 97% center;
+}
+
+/*header*/
+#header{
+    border-bottom: 2px solid #333;
+}
+.header_inner{
+    width: 1432px;
+    margin: 0 auto;
+    position: relative;
+}
+.icon_category{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.header_inner ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_inner ul li{
+    font-size: 20px;
+    padding: 20px 85px;
+    font-weight: 800;
+}
+
+/*brand_name*/
+#brand_name{
+    width: 1432px;
+    margin: 0 auto;
+    padding-top: 452px;
+    padding-bottom: 200px;
+}
+
+.b_sentece, .b_name{
+    font-size: 120px;
+    font-weight: 700;
+    padding-bottom: 70px;
+    text-align: left;
+    line-height: 0.7;
+}
+.b_name{
+    font-size: 166px;
+}
+
+/*book*/
+#book{
+    margin: 0 auto;
+    padding-bottom: 200px;
+}
+h1{
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+@keyframes movement {
+    0% {
+      background-position: 0px 0px;
+    }
+
+    100% {
+      background-position: 3567px 0px;
+      /*배경이미지 길이만큼 설정합니다!*/
+    }
+  }
+
+.book_bg_1{
+width: 100%;
+height: 180px;
+/*배경이미지 높이로 설정*/
+background: url(../images/brand_books_bg1.png) repeat-x left top;
+background-size: auto 180px;
+animation: movement 100s linear infinite;
+padding-bottom: 30px;
+}
+.book_bg_2{
+width: 100%;
+height: 180px;
+/*배경이미지 높이로 설정*/
+background: url(../images/brand_books_bg2.png) repeat-x left top;
+background-size: auto 180px;
+animation: movement 100s linear infinite reverse;
+}
+
+
+/*goods*/
+#goods{
+    position: relative;
+}
+
+.b_goods img {
+    width: 100%;
+}
+
+.b_goods .swiper-slide h1 {
+    padding: 10px 0;
+}
+
+.b_goods .swiper-slide p {
+    padding-bottom: 30px;
+}
+.b_goods{
+    padding-bottom: 50px;
+}
+.swiper-button-prev {
+    left: -50px;
+    right: auto;
+}
+.swiper-button-next {
+    right: -50px;
+    left: auto;
+}
+
+/*높이가 다른 슬라이드들을 세로 가운데가 맞게 해줌*/
+.b_goods .swiper-wrapper {
+    align-items: center;
+}
+
+/*지금 현재 가운데 보이고 있는 슬라이드는 .swiper-slide-active 라는 클래스를 가지는데 이를 이용해 스타일을 꾸며줌. */
+.b_goods .swiper-slide {
+    transform-origin: bottom;
+    transform: scale(0.5);
+    opacity: 0.3;
+}
+.b_goods .swiper-slide-prev{
+    transform: scale(0.8);
+}
+.b_goods .swiper-slide-next{
+    transform: scale(0.8);
+}
+.b_goods .swiper-slide-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.3s;
+}
+.b_goods .swiper-slide .text {
+    display: none;
+}
+.b_goods .swiper-slide-active .text {
+    display: block;
+}
+/*불릿모양. swiper-pagination-bullet-active 클래스가 현재 색상이 들어간 부분 나타냄*/
+.swiper-pagination-bullet-active {
+    width: 30px;
+    border-radius: 4px;
+}
+
+
+
+
+/*review*/
+#review{
+    width: 1432px;
+    margin: 0 auto;
+    padding: 200px 0;
+}
+.review_inner{
+    display: flex;
+}
+.homepage_box{
+    width: 716px;
+}
+.sticky_box{
+    position: sticky;
+    top: 180px;
+    left: 0;
+}
+.review_box{
+    width: 716px;
+    height: 2000px;
+}
+.review_box ul li{
+    padding-bottom: 50px;
+}
+.review_box ul li img{
+    width: 391px;
+    height: 151px;
+    padding-left: 169px;
+}
+
+/*event*/
+#event{
+    width: 1432px;
+    margin: 0 auto;
+    padding-bottom: 200px;
+}
+#event ul{
+    display: flex;
+    justify-content: space-between;
+
+}
+#event ul li{
+    border: 1px solid #333;
+}
+.e_title{
+    font-size: 25px;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    font-weight: 600;
+}
+.e_subtitle{
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 35px;
+    font-weight: 600;
+}
+/*store_info*/
+#store_info{
+    width: 1432px;
+    margin: 0 auto;
+    padding-bottom: 200px;
+}
+#store_info ul{
+    display: flex;
+    justify-content: space-between;
+
+}
+.store_building_img{
+    background-image: url(../images/brand_building_2.png);
+    background-repeat: no-repeat;
+    width: 646px;
+    height: 600px;
+}
+#store_info h2{
+    font-size: 35px;
+    padding-bottom: 50px;
+}
+.info_box{
+    width: 716px;
+}
+.store_inside img{
+    height: 350px;
+    width: 646px;
+}
+.tabs{
+    position: relative;
+}
+.bookstore_text{
+    position: absolute;
+    top: 405PX;
+    left: 190px;
+    font-size: 40px;
+    font-weight: 800;
+}
+.bookstore_text a{
+    display: inline-block;
+    padding: 70px 87px;
+}
+.store_building_img .tabs .bookstore_text a:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    transition: all 0.5s;
+}
+.store_building_img .tabs .goods_shop_text a:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    transition: all 0.5s;
+}
+.store_building_img .tabs .reading_space_text a:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    transition: all 0.5s;
+}
+.goods_shop_text{
+    position: absolute;
+    top: 246px;
+    left: 181px;
+    font-size: 40px;
+    font-weight: 800;
+    transition: all 0.5s;
+}
+.goods_shop_text a{
+    display: inline-block;
+    padding: 68px 79px;
+}
+.reading_space_text{
+    position: absolute;
+    top: 84px;
+    left: 182px;
+    font-size: 40px;
+    font-weight: 800;
+}
+.reading_space_text a{
+    display: inline-block;
+    padding: 70px 55px;
+}
+.active{
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+.active a{
+    color: #fff;
+}
+/*store_map*/
+#store_map{
+    width: 1432px;
+    margin: 0 auto;
+    padding-bottom: 200px;
+}
+.map_box{
+    width: 1432px;
+    height: 500px;
+}
+#store_map ul{
+    display: flex;
+    padding-top: 100px;
+}
+h4{
+    font-size: 35px;
+    padding-bottom: 50px;
+}
+h5{
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+#store_map ul li p{
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+#store_map ul li:last-child{
+    padding-left: 400px;
+}
+
+/*footer*/
+#footer{
+    border-top: 1px solid #e4e4e4;
+}
+.footer_inner1{
+    width: 1432px;
+    margin: 0 auto;    
+    padding: 50px 0;
+    font-size: 18px;
+    line-height: 1.7;
+    font-weight: 500;
+}
+.footer_inner2{
+    display: flex;
+
+    justify-content: space-between;
+}
+.f_text_box{
+    padding-left: 50%; 
+    display: flex;
+    padding-bottom: 50px;
+}
+.f_left_text{
+    padding-right: 191px;
+}
+.f_left_text a{
+    display: block;
+}
+.f_pad{
+    padding-right: 15px;
+}
+.top_btn{
+    display: inline-block;
+    background-color: #8f8f8f;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: 99;
+}

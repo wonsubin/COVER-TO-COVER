@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1500">
+    <title>COVER TO COVER</title>
+        <!--파비콘-->
+        <link rel="shortcut icon" href="./images/COVER-TO-COVER-Favicon.png" type="image/x-icon">
+        <!--Pretandard 웹폰트-->
+        <link href="https://webfontworld.github.io/pretendard/Pretendard.css" rel="stylesheet">
+    
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        
+
+        <link rel="stylesheet" href="./css/style_sub_2.css">
+</head>
+<body>
+    <div id="top_box">
+        <!--포지션 기준, border-->
+        <div id="top">
+            <!--가운데정렬-->
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./images/logo.png" alt="로고이미지">
+                </a>
+            </div><!--logo-->
+            <div>
+                <input type="search" class="search" placeholder="찾고 싶은 상품을 입력해주세요.">
+            </div>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./images/icon_cart.png" alt="카트아이콘">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/icon_heart.png" alt="하트아이콘">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/icon_login.png" alt="로그인아이콘">
+                    </a>
+                </li>
+            </ul>
+        </div><!--top-->
+    </div><!--top_box-->
+    <div id="header">
+        <!--border-->
+        <div class="header_inner">
+            <!--가운데정렬-->
+            <a href="#" class="icon_category">
+                <img src="./images/icon_category.png" alt="카테고리 아이콘">
+            </a>
+            <ul>
+                <li>
+                    <a href="./sub_1_Books.html">BOOKS</a>
+                </li>
+                <li>
+                    <a href="./sub_2_booklog.html">BOOKLOG</a>
+                </li>
+                <li>
+                    <a href="./sub_3_goods.html">GOODS</a>
+                </li>
+                <li>
+                    <a href="./sub_4_event.html">EVENT</a>
+                </li>
+                <li>
+                    <a href="./sub_5_brand.html">BRAND</a>
+                </li>
+            </ul>
+        </div><!--header_inner-->
+    </div><!--header-->
+    <div id="my_booklog">
+        <!--배경색-->
+        <div class="my_booklog_inner">
+            <h1>MY BOOKLOG</h1>
+            <ul>
+                <li>
+                    <div class="calendar_box">
+                        <h2>MY CALENDAR</h2>
+                        <div class="calendar_img">
+                            <ul class="tabs">
+                                <!--li에 클래스 달아서 포지션시키기-->
+                                <li class="week1"><a href="#tab1"><img src="./images/booklog_calendar_b1.png" alt="책 이미지"></a></li>
+                                <li class="week2"><a href="#tab2"><img src="./images/booklog_calendar_b1.png" alt="책 이미지"></a></li>
+                                <li class="week3"><a href="#tab3"><img src="./images/booklog_calendar_b1.png" alt="책 이미지"></a></li>
+                                <li class="week4"><a href="#tab4"><img src="./images/booklog_calendar_b1.png" alt="책 이미지"></a></li>
+                                <li class="week5"><a href="#tab5"><img src="./images/booklog_calendar_b1.png" alt="책 이미지"></a></li>
+                            </ul>
+                        </div>
+                    </div><!--calendar_box-->
+                </li>
+                <li>
+                    <div class="mylog_box">
+                        <h2>MY LOG</h2>
+                        <div class="mylog_inner">
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="./images/booklog_mylog_icon_1.png" alt="읽은책 아이콘"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./images/booklog_mylog_icon_2.png" alt="인생책 아이콘"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./images/booklog_mylog_icon_3.png" alt="관심책 아이콘"></a>
+                                </li>
+                            </ul>
+                            <ul class="icon_name">
+                                <li><a href="#">읽은책</a></li>
+                                <li><a href="#">인생책</a></li>
+                                <li><a href="#">관심책</a></li>
+                            </ul>
+                            <h3>MY 독서 리뷰</h3>
+                            <!--
+                            <div class="all_books">
+                            </div>all_books-->
+                            <div class="tab_container">
+                                <div id="tab1" class="tab_content bg1">
+                                    <!--Content-->
+                                    <div class="book_content">
+                                        <img src="./images/booklog_review_3.png" alt="">
+                                   </div><!--book_content-->
+                                </div><!--tab1-->
+                                <div id="tab2" class="tab_content bg2">
+                                    <!--Content-->
+                                    <img src="./images/booklog_review_2.png" alt="">
+                                    글자2
+                                </div><!--tab2-->
+                                <div id="tab3" class="tab_content bg3">
+                                    <!--Content-->
+                                    <img src="./images/booklog_review_2.png" alt="">
+                                </div><!--tab3-->
+                                <div id="tab4" class="tab_content bg4">
+                                    <!--Content-->
+                                    <img src="./images/booklog_review.png" alt="">
+                                </div><!--tab4-->
+                                <div id="tab5" class="tab_content bg5">
+                                    <!--Content-->
+                                    <img src="./images/booklog_review.png" alt="">
+                                </div><!--tab4-->     
+                            </div><!--tab_container-->
+                        </div><!--mylog_inner-->
+                    </div><!--mylog_box-->
+                    
+                </li>
+            </ul>
+        </div>
+     
+    </div><!--my_booklog-->
+    <div id="comment">
+        <h1>지금 뜨는 코멘트</h1>
+        <div class="comment_inner">
+            <div class="comment_box">
+                <div class="comment_img_1">
+                    <a href="#"><img src="./images/booklog_recom_book_1.png" alt="책 이미지"></a>
+                </div><!--comment_img-->
+                <div class="comment_text_box">
+                    <div class="comment_text">
+                        <a href="#" class="c_genre">에세이</a>
+                        <a href="#" class="c_title">삶의 반대편에 들판이 있다면</a>
+                        <a href="#" class="c_writer">문보영 · 한겨레출판사</a>
+                    </div><!--comment_text-->
+                    <!-- Swiper -->
+                    <div class="swiper comment_swiper">
+                        <div class="swiper-wrapper">
+                        <div class="swiper-slide comment_slide">
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="./images/booklog_profile_1.png" alt="프로필 이미지"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="c_name">꿈꾸는 다락방</a>
+                                    <a href="#" class="c_sentence">맑고 예쁜 순간의 기록들</a>
+                                </li>
+                                <li>
+                                    <img src="./images/icon_star_five.jpg" alt="별점 아이콘" class="c_star">
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="./images/booklog_profile_2.png" alt="프로필 이미지"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="c_name">새벽을 걷는 달</a>
+                                    <a href="#" class="c_sentence">믿고보는 문보영 시인 문장이 좋다.</a>
+                                </li>
+                                <li>
+                                    <img src="./images/icon_star_five.jpg" alt="별점 아이콘" class="c_star">
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="./images/booklog_profile_3.png" alt="프로필 이미지"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="c_name">반짝이는 혁신가</a>
+                                    <a href="#" class="c_sentence">삶을 낯설게 보고 싶을 때, 삶을 애정을 담아 섬세하게 묘사하고 싶을 때 추천합니다!</a>
+                                </li>
+                                <li>
+                                    <img src="./images/icon_star_five.jpg" alt="별점 아이콘" class="c_star">
+                                </li>
+                            </ul>
+                        </div><!--swiper-slide-->
+                        <div class="swiper-slide comment_slide">
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="./images/booklog_profile_1.png" alt="프로필 이미지"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="c_name">꿈꾸는 다락방</a>
+                                    <a href="#" class="c_sentence">맑고 예쁜 순간의 기록들</a>
+                                </li>
+                                <li>
+                                    <img src="./images/icon_star_five.jpg" alt="별점 아이콘" class="c_star">
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="./images/booklog_profile_2.png" alt="프로필 이미지"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="c_name">꿈꾸는 다락방</a>
+                                    <a href="#" class="c_sentence">맑고 예쁜 순간의 기록들</a>
+                                </li>
+                                <li>
+                                    <img src="./images/icon_star_five.jpg" alt="별점 아이콘" class="c_star">
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="./images/booklog_profile_3.png" alt="프로필 이미지"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="c_name">꿈꾸는 다락방</a>
+                                    <a href="#" class="c_sentence">맑고 예쁜 순간의 기록들</a>
+                                </li>
+                                <li>
+                                    <img src="./images/icon_star_five.jpg" alt="별점 아이콘" class="c_star">
+                                </li>
+                            </ul>
+                        </div><!--swiper-slide-->
+                        <div class="swiper-slide comment_slide">
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="./images/booklog_profile_1.png" alt="프로필 이미지"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="c_name">꿈꾸는 다락방</a>
+                                    <a href="#" class="c_sentence">맑고 예쁜 순간의 기록들</a>
+                                </li>
+                                <li>
+                                    <img src="./images/icon_star_five.jpg" alt="별점 아이콘" class="c_star">
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="./images/booklog_profile_2.png" alt="프로필 이미지"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="c_name">꿈꾸는 다락방</a>
+                                    <a href="#" class="c_sentence">맑고 예쁜 순간의 기록들</a>
+                                </li>
+                                <li>
+                                    <img src="./images/icon_star_five.jpg" alt="별점 아이콘" class="c_star">
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="./images/booklog_profile_3.png" alt="프로필 이미지"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="c_name">꿈꾸는 다락방</a>
+                                    <a href="#" class="c_sentence">맑고 예쁜 순간의 기록들</a>
+                                </li>
+                                <li>
+                                    <img src="./images/icon_star_five.jpg" alt="별점 아이콘" class="c_star">
+                                </li>
+                            </ul>
+                        </div><!--swiper-slide-->
+                        </div><!--swiper-wrapper-->
+                    </div><!--swiper-->
+                </div><!--comment_text_box-->
+            </div><!--comment_box-->
+            <div class="comment_box">
+                <div class="comment_img_2">
+                    <a href="#"><img src="./images/booklog_recom_book_2.png" alt="책 이미지"></a>
+                </div><!--comment_img-->
+                <div class="comment_text_box">
+                    <div class="comment_text">
+                        <a href="#" class="c_genre">교양</a>
+                        <a href="#" class="c_title">다정한 것이 살아남는다</a>
+                        <a href="#" class="c_writer">브라이언 헤어 , 버네사 우즈 저자 · 디플롯</a>
+                    </div><!--comment_text-->
+                    <!-- Swiper -->
+                    <div class="swiper comment_swiper">
+                        <div class="swiper-wrapper">
+                        <div class="swiper-slide comment_slide">
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="./images/booklog_profile_1.png" alt="프로필 이미지"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="c_name">꿈꾸는 다락방</a>
+                                    <a href="#" class="c_sentence">맑고 예쁜 순간의 기록들</a>
+                                </li>
+                                <li>
+                                    <img src="./images/icon_star_five.jpg" alt="별점 아이콘" class="c_star">
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="./images/booklog_profile_2.png" alt="프로필 이미지"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="c_name">새벽을 걷는 달</a>
+                                    <a href="#" class="c_sentence">믿고보는 문보영 시인 문장이 좋다.</a>
+                                </li>
+                                <li>
+                                    <img src="./images/icon_star_five.jpg" alt="별점 아이콘" class="c_star">
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="./images/booklog_profile_3.png" alt="프로필 이미지"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="c_name">반짝이는 혁신가</a>
+                                    <a href="#" class="c_sentence">삶을 낯설게 보고 싶을 때, 삶을 애정을 담아 섬세하게 묘사하고 싶을 때 추천합니다!</a>
+                                </li>
+                                <li>
+                                    <img src="./images/icon_star_five.jpg" alt="별점 아이콘" class="c_star">
+                                </li>
+                            </ul>
+                        </div><!--swiper-slide-->
+                        <div class="swiper-slide comment_slide">
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="./images/booklog_profile_1.png" alt="프로필 이미지"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="c_name">꿈꾸는 다락방</a>
+                                    <a href="#" class="c_sentence">맑고 예쁜 순간의 기록들</a>
+                                </li>
+                                <li>
+                                    <img src="./images/icon_star_five.jpg" alt="별점 아이콘" class="c_star">
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="./images/booklog_profile_2.png" alt="프로필 이미지"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="c_name">꿈꾸는 다락방</a>
+                                    <a href="#" class="c_sentence">맑고 예쁜 순간의 기록들</a>
+                                </li>
+                                <li>
+                                    <img src="./images/icon_star_five.jpg" alt="별점 아이콘" class="c_star">
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="./images/booklog_profile_3.png" alt="프로필 이미지"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="c_name">꿈꾸는 다락방</a>
+                                    <a href="#" class="c_sentence">맑고 예쁜 순간의 기록들</a>
+                                </li>
+                                <li>
+                                    <img src="./images/icon_star_five.jpg" alt="별점 아이콘" class="c_star">
+                                </li>
+                            </ul>
+                        </div><!--swiper-slide-->
+                        <div class="swiper-slide comment_slide">
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="./images/booklog_profile_1.png" alt="프로필 이미지"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="c_name">꿈꾸는 다락방</a>
+                                    <a href="#" class="c_sentence">맑고 예쁜 순간의 기록들</a>
+                                </li>
+                                <li>
+                                    <img src="./images/icon_star_five.jpg" alt="별점 아이콘" class="c_star">
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="./images/booklog_profile_2.png" alt="프로필 이미지"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="c_name">꿈꾸는 다락방</a>
+                                    <a href="#" class="c_sentence">맑고 예쁜 순간의 기록들</a>
+                                </li>
+                                <li>
+                                    <img src="./images/icon_star_five.jpg" alt="별점 아이콘" class="c_star">
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="./images/booklog_profile_3.png" alt="프로필 이미지"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="c_name">꿈꾸는 다락방</a>
+                                    <a href="#" class="c_sentence">맑고 예쁜 순간의 기록들</a>
+                                </li>
+                                <li>
+                                    <img src="./images/icon_star_five.jpg" alt="별점 아이콘" class="c_star">
+                                </li>
+                            </ul>
+                        </div><!--swiper-slide-->
+                        </div><!--swiper-wrapper-->
+                    </div><!--swiper-->
+                </div><!--comment_text_box-->
+            </div><!--comment_box-->
+            <div class="comment_box">
+                <div class="comment_img_3">
+                    <a href="#"><img src="./images/booklog_recom_book_3.png" alt="책 이미지"></a>
+                </div><!--comment_img-->
+                <div class="comment_text_box">
+                    <div class="comment_text">
+                        <a href="#" class="c_genre">시</a>
+                        <a href="#" class="c_title">무해한 복숭아</a>
+                        <a href="#" class="c_writer">이은규 · 아침달</a>
+                    </div><!--comment_text-->
+                    <!-- Swiper -->
+                    <div class="swiper comment_swiper">
+                        <div class="swiper-wrapper">
+                        <div class="swiper-slide comment_slide">
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="./images/booklog_profile_1.png" alt="프로필 이미지"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="c_name">꿈꾸는 다락방</a>
+                                    <a href="#" class="c_sentence">맑고 예쁜 순간의 기록들</a>
+                                </li>
+                                <li>
+                                    <img src="./images/icon_star_five.jpg" alt="별점 아이콘" class="c_star">
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="./images/booklog_profile_2.png" alt="프로필 이미지"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="c_name">새벽을 걷는 달</a>
+                                    <a href="#" class="c_sentence">믿고보는 문보영 시인 문장이 좋다.</a>
+                                </li>
+                                <li>
+                                    <img src="./images/icon_star_five.jpg" alt="별점 아이콘" class="c_star">
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="./images/booklog_profile_3.png" alt="프로필 이미지"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="c_name">반짝이는 혁신가</a>
+                                    <a href="#" class="c_sentence">삶을 낯설게 보고 싶을 때, 삶을 애정을 담아 섬세하게 묘사하고 싶을 때 추천합니다!</a>
+                                </li>
+                                <li>
+                                    <img src="./images/icon_star_five.jpg" alt="별점 아이콘" class="c_star">
+                                </li>
+                            </ul>
+                        </div><!--swiper-slide-->
+                        <div class="swiper-slide comment_slide">
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="./images/booklog_profile_1.png" alt="프로필 이미지"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="c_name">꿈꾸는 다락방</a>
+                                    <a href="#" class="c_sentence">맑고 예쁜 순간의 기록들</a>
+                                </li>
+                                <li>
+                                    <img src="./images/icon_star_five.jpg" alt="별점 아이콘" class="c_star">
+                                </li>
+                            </ul>
+                            <ul>z
+                                <li>
+                                    <a href="#"><img src="./images/booklog_profile_2.png" alt="프로필 이미지"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="c_name">꿈꾸는 다락방</a>
+                                    <a href="#" class="c_sentence">맑고 예쁜 순간의 기록들</a>
+                                </li>
+                                <li>
+                                    <img src="./images/icon_star_five.jpg" alt="별점 아이콘" class="c_star">
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="./images/booklog_profile_3.png" alt="프로필 이미지"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="c_name">꿈꾸는 다락방</a>
+                                    <a href="#" class="c_sentence">맑고 예쁜 순간의 기록들</a>
+                                </li>
+                                <li>
+                                    <img src="./images/icon_star_five.jpg" alt="별점 아이콘" class="c_star">
+                                </li>
+                            </ul>
+                        </div><!--swiper-slide-->
+                        <div class="swiper-slide comment_slide">
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="./images/booklog_profile_1.png" alt="프로필 이미지"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="c_name">꿈꾸는 다락방</a>
+                                    <a href="#" class="c_sentence">맑고 예쁜 순간의 기록들</a>
+                                </li>
+                                <li>
+                                    <img src="./images/icon_star_five.jpg" alt="별점 아이콘" class="c_star">
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="./images/booklog_profile_2.png" alt="프로필 이미지"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="c_name">꿈꾸는 다락방</a>
+                                    <a href="#" class="c_sentence">맑고 예쁜 순간의 기록들</a>
+                                </li>
+                                <li>
+                                    <img src="./images/icon_star_five.jpg" alt="별점 아이콘" class="c_star">
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="./images/booklog_profile_3.png" alt="프로필 이미지"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="c_name">꿈꾸는 다락방</a>
+                                    <a href="#" class="c_sentence">맑고 예쁜 순간의 기록들</a>
+                                </li>
+                                <li>
+                                    <img src="./images/icon_star_five.jpg" alt="별점 아이콘" class="c_star">
+                                </li>
+                            </ul>
+                        </div><!--swiper-slide-->
+                        </div><!--swiper-wrapper-->
+                    </div><!--swiper-->
+                </div><!--comment_text_box-->
+            </div><!--comment_box-->
+        </div><!--comment_inner-->
+    </div><!--comment-->
+    <div id="collect">
+        <!--배경색-->
+        <h1>문장수집</h1>
+        <div class="collect_inner">
+            <div class="sentence_box_1">
+                <ul>
+                    <li>
+                        <a href="#"><img src="./images/booklog_sen_profile_1.png" alt="프로필 이미지"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="s_name">꿈꾸는 고슴도치</a>
+                    </li>
+                    <li>
+                        <p>2024.05.28</p>
+                    </li>
+                </ul>
+                <div class="sentence_text">
+                    <a href="#">
+                    때로는 시시하고 때로는 끔찍했으며 결국에는 죄다 망해버린 연애들이 있었다. 초라하게 사라진 나라들조차 폐허 어딘가에는 영광을 남기는 것처럼 그 연애들에도 부정할 수 없는 순간은 있었다. 연애가 망하더라도 사랑은 망할 수 없는 것일지도 몰랐다.
+                    </a>
+                <a href="#" class="s_book_page">두 사람의 인터내셔널 p.142 에서</a>
+                </div><!--sentence_text-->
+             
+            </div><!--sentence_box_1-->
+            <div class="sentence_box_2">
+                <ul>
+                    <li>
+                        <a href="#"><img src="./images/booklog_sen_profile_1.png" alt="프로필 이미지"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="s_name">꿈꾸는 고슴도치</a>
+                    </li>
+                    <li>
+                        <p>2024.05.28</p>
+                    </li>
+                </ul>
+                <div class="sentence_text">
+                    <a href="#">
+                    때로는 시시하고 때로는 끔찍했으며 결국에는 죄다 망해버린 연애들이 있었다. 초라하게 사라진 나라들조차 폐허 어딘가에는 영광을 남기는 것처럼 그 연애들에도 부정할 수 없는 순간은 있었다. 연애가 망하더라도 사랑은 망할 수 없는 것일지도 몰랐다.
+                    </a>
+                <a href="#" class="s_book_page">두 사람의 인터내셔널 p.142 에서</a>
+                </div><!--sentence_text-->
+            </div><!--sentence_box_2-->
+            <div class="sentence_box_3">
+                <ul>
+                    <li>
+                        <a href="#"><img src="./images/booklog_sen_profile_1.png" alt="프로필 이미지"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="s_name">꿈꾸는 고슴도치</a>
+                    </li>
+                    <li>
+                        <p>2024.05.28</p>
+                    </li>
+                </ul>
+                <div class="sentence_text">
+                    <a href="#">
+                    때로는 시시하고 때로는 끔찍했으며 결국에는 죄다 망해버린 연애들이 있었다. 초라하게 사라진 나라들조차 폐허 어딘가에는 영광을 남기는 것처럼 그 연애들에도 부정할 수 없는 순간은 있었다. 연애가 망하더라도 사랑은 망할 수 없는 것일지도 몰랐다.
+                    </a>
+                <a href="#" class="s_book_page">두 사람의 인터내셔널 p.142 에서</a>
+                </div><!--sentence_text-->
+            </div><!--sentence_box_3-->
+        </div><!--collect_inner-->
+    </div><!--collect-->
+    <div id="footer">
+        <!--border-->
+        <div class="footer_inner1">
+        <div class="footer_inner2">
+            <div class="f_logo">
+                <a href="#"><img src="./images/logo.png" alt="로고이미지"></a>
+            </div><!--f_logo-->
+            <div class="f_text_box">
+                <div class="f_left_text">
+                    <a href="#">ABOUT</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">공지사항</a>
+                </div>
+                <div class="f_right_text">
+                    <ul>
+                        <li><p>커버투커버</p></li>
+                        <li><p>대표자 : 원수빈</p></li>
+                    </ul>
+                    <p>주소 : 부산광역시 중구 중앙대로 26 </p>
+                    <p>E-mail : w.design.archive@gmail.com </p>
+                    <p>TEL : 010.3909.7786</p>
+                </div>
+            </div><!--f_text_box-->
+        </div><!--footer_inner2-->
+            <a href="#" class="f_pad">개인정보처리방침</a>
+            <a href="#">이용약관 </a>
+            <p>Copyright © COVER TO COVER. All rights reserved.</p>
+        </div><!--footer_inner1-->
+    </div><!--footer-->
+    <a href="#top" class="top_btn">TOP</a>
+
+
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- comment Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".comment_swiper", {
+            direction: "vertical",
+            autoplay: {
+                delay: 2000,
+
+                },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                
+            },
+            });
+        </script>
+    
+
+    
+     <!--탭 제이쿼리 라이브러리-->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    
+    <!--탭 js. 원본파일에서 상대경로로 연결되어 있던 파일이기 때문에 반드시 파일을 옮겨놓고 연결해준다-->
+    <script src="./js/tab.js"></script>
+</body>
+</html>

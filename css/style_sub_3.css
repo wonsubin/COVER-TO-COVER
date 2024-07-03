@@ -1,0 +1,275 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+ul, ol{ 
+    list-style: none;
+}
+img, video, iframe{
+    vertical-align: middle;
+}
+body{
+    min-width: 1500px;
+    font-family: 'Pretendard';
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+}
+
+/*top*/
+#top_box{
+    border-bottom: 2px solid #333;
+}
+#top{
+    width: 1432px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#top ul{
+    display: flex;
+} 
+#top ul li{
+    padding-right: 30px;
+}
+.logo{
+    padding: 20px 0;
+
+}
+.search{
+    width: 570px;
+    height: 55px;
+    border: 3px solid #000;
+    border-radius: 29px;
+    padding: 20px;
+    padding-left: 30px;
+    outline-style: none;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/icon_search.png);
+    background-repeat: no-repeat;
+    background-position: 97% center;
+}
+
+/*header*/
+#header{
+    border-bottom: 2px solid #333;
+}
+.header_inner{
+    width: 1432px;
+    margin: 0 auto;
+    position: relative;
+}
+.icon_category{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.header_inner ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_inner ul li{
+    font-size: 20px;
+    padding: 20px 85px;
+    font-weight: 800;
+}
+
+/*new*/
+#new{
+    width: 1432px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+.new_inner{
+    position: relative;
+}
+h1{
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 70px;
+    text-align: center;
+}
+.n_item_box{
+    background-image: url(../images/ng_background_7.jpg);
+    background-repeat: no-repeat;
+    
+}
+.n_item{
+    text-align: center;
+
+    height: 700px;
+}
+.n_slide{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.n_white_box{
+    background-color: white;
+    width:360px;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    padding: 23px;
+    line-height: 1.7;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: none;
+}
+.n_made{
+    font-size: 14px;
+    font-weight: 400;
+}
+.n_name{
+    font-size: 20px;
+    font-weight: 600;
+}
+.n_price{
+    font-size: 22px;
+    font-weight: 500;
+    padding-bottom: 8px;
+}
+.n_white_box ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.swiper-slide-active .n_white_box{
+    display: block;
+}
+.more_btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.more_btn a{
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    width: 80px;
+    justify-content: space-between;
+}
+
+
+/*category*/
+#category{
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+.category_inner{
+    width: 1432px;
+    margin: 0 auto;
+}
+.category_inner ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+.category_inner ul li a{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/*treding*/
+#trending{
+    width: 1432px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+.tn{
+    padding-bottom: 30px;
+}
+.tn .swiper-wrapper .swiper-slide{
+    width: 300px;
+    
+}
+.tn .swiper-wrapper .swiper-slide{
+    text-align: center;
+}
+.brand{
+    font-size: 16px;
+    font-weight: 600;
+}
+.product{
+    font-size: 20px;
+    font-weight: 600;
+}
+.price{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/*best*/
+#best{
+    width: 1432px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+.best{
+    padding-bottom: 30px;
+}
+.best .swiper-wrapper .swiper-slide{
+    text-align: center;
+}
+
+/*footer*/
+#footer{
+    border-top: 1px solid #e4e4e4;
+}
+.footer_inner1{
+    width: 1432px;
+    margin: 0 auto;    
+    padding: 50px 0;
+    font-size: 18px;
+    line-height: 1.7;
+    font-weight: 500;
+}
+.footer_inner2{
+    display: flex;
+
+    justify-content: space-between;
+}
+.f_text_box{
+    padding-left: 50%; 
+    display: flex;
+    padding-bottom: 50px;
+}
+.f_left_text{
+    padding-right: 191px;
+}
+.f_left_text a{
+    display: block;
+}
+.f_pad{
+    padding-right: 15px;
+}
+.top_btn{
+    display: inline-block;
+    background-color: #8f8f8f;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: 99;
+}
