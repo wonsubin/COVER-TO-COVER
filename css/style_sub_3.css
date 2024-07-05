@@ -102,6 +102,7 @@ h1{
 .n_item_box{
     background-image: url(../images/ng_background_7.jpg);
     background-repeat: no-repeat;
+    border-radius: 30px;
     
 }
 .n_item{
@@ -202,12 +203,15 @@ h1{
     text-align: center;
 }
 .brand{
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    color: #999999;
 }
 .product{
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
+    padding-bottom: 14px;
 }
 .price{
     font-size: 20px;
@@ -259,17 +263,18 @@ h1{
 .f_pad{
     padding-right: 15px;
 }
+
+
 .top_btn{
-    display: inline-block;
-    background-color: #8f8f8f;
-    padding: 10px;
-    width: 30px;
-    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
-    right: 40px;
-    bottom: 40px;
+    right: 50px;
+    bottom: 60px;
     z-index: 99;
+    transition: all 0.5s;
 }
+.top_btn:hover{
+    transform: rotate(-20deg);
+}    

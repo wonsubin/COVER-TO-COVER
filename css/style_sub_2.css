@@ -88,7 +88,7 @@ body{
 /*my_booklog*/
 #my_booklog{
     background-color: #FFFACD;
-    padding-top: 100px;
+    padding-top: 150px;
     padding-bottom: 150px;
 }
 .my_booklog_inner{
@@ -96,8 +96,9 @@ body{
     margin: 0 auto;
 }
 h1{
+    padding-top: 100px;
     text-align: center;
-    padding-bottom: 100px;
+    padding-bottom: 70px;
     font-size: 40px;
     font-weight: 700;
 }
@@ -175,7 +176,7 @@ h2{
 }
 */
 .tab_container{
-    border: 1px solid #2E2E2E;
+    border: 1px solid #CBCBCB;
     width: 630px;
     height: 519px;
 }
@@ -193,9 +194,10 @@ h2{
     justify-content: space-between;
 }
 .comment_box{
-    border: 1px solid #707070;
+    border: 1px solid #CBCBCB;
     width: 410px;
-    height: 800px;
+    height: 810px;
+    border-radius: 30px;
 }
 
 .comment_img_1{
@@ -226,32 +228,34 @@ h2{
     transform: translate(-50%, -50%);
 }
 .comment_text{
-    height: 100px;
+    height: 110px;
     box-sizing: border-box;
-    line-height: 1.6;
+    line-height: 1.7;
     padding: 15px 0;
     padding-left: 20px;
-    border-bottom: 1px solid #707070;
+    border-bottom: 1px solid #CBCBCB;
 
 }
 .c_genre{
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 500;
     display: block;
+    color: #767676;
 }
 .c_title{
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     display: block;
 }
 .c_writer{
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 500;
     display: block;
+    color: #595959;
 }
 .comment_swiper{
     width: 410px;
-    height: 288px;
+    height: 290px;
 }
 .comment_slide{
     padding: 22px 22px;
@@ -274,11 +278,12 @@ h2{
     font-size: 13px;
     font-weight: 600;
     display: block;
+    color: #242424;
 }
 .c_sentence{
     font-size: 13px;
-    font-weight: 600;
-    color: #545454;
+    font-weight: 500;
+    color: #555555;
     display: block;
 }
 .c_star{
@@ -343,19 +348,32 @@ h2{
 .sentence_text{
    padding: 117px 25px;
    padding-bottom: 0;
-   font-weight: 500;
+   font-weight: 400;
    font-size: 15px;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+}
+.sentence_text p{
+    width: 345px;
+    text-align: center;
 }
 .s_book_page{
     display: block;
     padding-top: 35px;
     text-align: center;
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 300;
 }
 .s_name{
     font-size: 15px;
     font-weight: 500;
+    color: #333333;
+}
+.s_date{
+    font-weight: 400;
+    color: #767676;
 }
 .s_book_page a{
     color: #2E2E2E;
@@ -392,17 +410,19 @@ h2{
 .f_pad{
     padding-right: 15px;
 }
+
+
+
 .top_btn{
-    display: inline-block;
-    background-color: #8f8f8f;
-    padding: 10px;
-    width: 30px;
-    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
-    right: 40px;
-    bottom: 40px;
+    right: 50px;
+    bottom: 60px;
     z-index: 99;
+    transition: all 0.5s;
 }
+.top_btn:hover{
+    transform: rotate(-20deg);
+}    

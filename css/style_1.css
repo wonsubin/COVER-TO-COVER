@@ -659,12 +659,14 @@ h2{
 }
 .view_more_btn{
     background-image: url(../images/view_more_btn.png);
-    padding: 50px 260px;
+    padding: 45px 260px;
+    padding-top: 60px;
     font-size: 25px;
     font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #fff;
 }
 
 /*new_book*/
@@ -964,17 +966,17 @@ h2{
 .f_pad{
     padding-right: 15px;
 }
+
 .top_btn{
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
-    right: 40px;
-    bottom: 40px;
+    right: 50px;
+    bottom: 60px;
     z-index: 99;
     transition: all 0.5s;
 }
 .top_btn:hover{
-
     transform: rotate(-20deg);
 }              

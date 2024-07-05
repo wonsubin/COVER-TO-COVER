@@ -251,7 +251,11 @@ animation: movement 100s linear infinite reverse;
 
 }
 #event ul li{
-    border: 1px solid #333;
+    border: 1px solid #CBCBCB;
+    border-radius: 30px;
+}
+#event img{
+    border-radius: 30px 30px 0 0;
 }
 .e_title{
     font-size: 25px;
@@ -264,43 +268,65 @@ animation: movement 100s linear infinite reverse;
     font-size: 15px;
     text-align: center;
     padding-bottom: 35px;
-    font-weight: 600;
+    font-weight: 500;
 }
+
+
 /*store_info*/
 #store_info{
+    background-color: #F4F4F4;
+}
+.store_info_inner{
     width: 1432px;
     margin: 0 auto;
-    padding-bottom: 200px;
+    padding: 50px 0;
 }
 #store_info ul{
     display: flex;
     justify-content: space-between;
-
 }
 .store_building_img{
-    background-image: url(../images/brand_building_2.png);
+    background-image: url(../images/brand_building_1.png);
     background-repeat: no-repeat;
     width: 646px;
     height: 600px;
 }
 #store_info h2{
-    font-size: 35px;
+    font-size: 40px;
     padding-bottom: 50px;
+    padding-top: 50px;
 }
 .info_box{
     width: 716px;
+    height: 500px;
+    background-color: #ffffff4f;
+    border: 1px solid #CBCBCB;
+    border-radius: 100px;
+    margin-top: 205px;
+    padding: 60px 20px;
+    box-sizing: border-box;
+}
+.store_inside{
+    text-align: center;
 }
 .store_inside img{
-    height: 350px;
-    width: 646px;
+    height: 320px;
+    width: 600px;
+    border-radius: 30px;
+}
+.store_inside .s_name{
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 40px;
+    box-sizing: border-box;
 }
 .tabs{
     position: relative;
 }
 .bookstore_text{
     position: absolute;
-    top: 405PX;
-    left: 190px;
+    top: 409px;
+    left: 148px;
     font-size: 40px;
     font-weight: 800;
 }
@@ -309,24 +335,24 @@ animation: movement 100s linear infinite reverse;
     padding: 70px 87px;
 }
 .store_building_img .tabs .bookstore_text a:hover{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     transition: all 0.5s;
 }
 .store_building_img .tabs .goods_shop_text a:hover{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     transition: all 0.5s;
 }
 .store_building_img .tabs .reading_space_text a:hover{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     transition: all 0.5s;
 }
 .goods_shop_text{
     position: absolute;
-    top: 246px;
-    left: 181px;
+    top: 251px;
+    left: 139px;
     font-size: 40px;
     font-weight: 800;
     transition: all 0.5s;
@@ -337,8 +363,8 @@ animation: movement 100s linear infinite reverse;
 }
 .reading_space_text{
     position: absolute;
-    top: 84px;
-    left: 182px;
+    top: 88px;
+    left: 140px;
     font-size: 40px;
     font-weight: 800;
 }
@@ -347,17 +373,22 @@ animation: movement 100s linear infinite reverse;
     padding: 70px 55px;
 }
 .active{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #000000e3;
 
 }
 .active a{
     color: #fff;
 }
+
+
 /*store_map*/
 #store_map{
     width: 1432px;
     margin: 0 auto;
     padding-bottom: 200px;
+}
+#store_map h1{
+    padding-top: 200px;
 }
 .map_box{
     width: 1432px;
@@ -415,17 +446,17 @@ h5{
 .f_pad{
     padding-right: 15px;
 }
+
 .top_btn{
-    display: inline-block;
-    background-color: #8f8f8f;
-    padding: 10px;
-    width: 30px;
-    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
-    right: 40px;
-    bottom: 40px;
+    right: 50px;
+    bottom: 60px;
     z-index: 99;
+    transition: all 0.5s;
 }
+.top_btn:hover{
+    transform: rotate(-20deg);
+}    
