@@ -845,8 +845,8 @@ h2{
  
 .b_goods:hover,
 .b_goods:hover{
-    cursor: url(../cursor_img.png), auto;
-    cursor: -webkit-image-set(url(../cursor_img.png) 1x, url(../cursor_img.png) 2x), auto;
+    cursor: url(../images/cursor_img.png), auto;
+    cursor: -webkit-image-set(url(../cursor_img.png) 1x, url(../images/cursor_img.png) 2x), auto;
  }
  
 
@@ -921,8 +921,8 @@ h2{
  
 .gn_inner .gn_item_box:hover,
 .gn_inner .gn_item_box:hover{
-    cursor: url(../cursor_img.png), auto;
-    cursor: -webkit-image-set(url(../cursor_img.png) 1x, url(../cursor_img.png) 2x), auto;
+    cursor: url(../images/cursor_img.png), auto;
+    cursor: -webkit-image-set(url(../cursor_img.png) 1x, url(../images/cursor_img.png) 2x), auto;
  }
  
 
