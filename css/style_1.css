@@ -56,6 +56,7 @@ body{
     height: 55px;
     border: 3px solid #000;
     border-radius: 29px;
+    background-color: #fff;
     padding: 20px;
     padding-left: 30px;
     outline-style: none;
@@ -826,7 +827,7 @@ h2{
     padding-top: 27px;
     font-size: 22px;
     font-weight: 500;
-    width: 250px;
+    width: 90%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
