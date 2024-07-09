@@ -46,6 +46,9 @@ body{
 #top ul li{
     padding-right: 30px;
 }
+#top ul li:last-child{
+    padding-right: 0;
+}
 .logo{
     padding: 20px 0;
 
@@ -125,6 +128,7 @@ top: 0px !important;
 #event{
     width: 1432px;
     margin: 0 auto;
+    padding-bottom: 150px;
 }
 h1{
     padding-top: 100px;

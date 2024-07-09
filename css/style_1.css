@@ -47,6 +47,9 @@ body{
 #top ul li{
     padding-right: 30px;
 }
+#top ul li:last-child{
+    padding-right: 0;
+}
 .logo{
     padding: 20px 0;
 
@@ -229,7 +232,7 @@ color: #000;
 /*comment*/
 #comment{
     padding-top: 150px;
-    padding-bottom: 100px; 
+    padding-bottom: 200px; 
     width: 1432px;
     margin: 0 auto;
 }
@@ -407,8 +410,7 @@ h2{
 #today{
     width: 1432px;
     margin: 0 auto;
-    padding-bottom: 100px;
-    padding: 100px 0;
+    padding-bottom: 150px;
     justify-content: space-between;
 }
 .today_inner{
@@ -593,7 +595,7 @@ h2{
     background: url(../images/move_logo.png) repeat-x left top;
     background-size: 745px 100px;
     animation: movement 10s linear infinite;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
 }
   @keyframes movement {
     0% {
@@ -791,7 +793,7 @@ h2{
     position: relative;
 }
 .h2_pad{
-    padding-bottom: 80px;
+    padding-bottom: 70px;
 }
 
 .b_goods img{
@@ -805,9 +807,6 @@ h2{
     border: 1px solid #ccc;
     box-sizing: border-box;
     position: relative;
-}
-.b_goods{
-    padding-bottom: 50px;
 }
 .bg_heart{
     position: absolute;
@@ -855,7 +854,8 @@ h2{
 #goods_new{
     width: 1432px;
     margin: 0 auto;
-    padding: 100px 0;
+    padding-top: 200px;
+    padding-bottom: 150px;
 }
 .gn_inner{
     position: relative;

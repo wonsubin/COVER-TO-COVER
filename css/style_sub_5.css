@@ -46,6 +46,9 @@ body{
 #top ul li{
     padding-right: 30px;
 }
+#top ul li:last-child{
+    padding-right: 0;
+}
 .logo{
     padding: 20px 0;
 
@@ -313,6 +316,7 @@ animation: movement 100s linear infinite reverse;
 /*store_info*/
 #store_info{
     background-color: #F4F4F4;
+    padding: 100px;
 }
 .store_info_inner{
     width: 1432px;
@@ -330,9 +334,9 @@ animation: movement 100s linear infinite reverse;
     height: 600px;
 }
 #store_info h2{
-    font-size: 40px;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    font-size: 45px;
+    padding-bottom: 100px;
+    text-align: center;
 }
 .info_box{
     width: 716px;
@@ -340,7 +344,7 @@ animation: movement 100s linear infinite reverse;
     background-color: #ffffff4f;
     border: 1px solid #CBCBCB;
     border-radius: 100px;
-    margin-top: 205px;
+    margin-top: 80px;
     padding: 60px 20px;
     box-sizing: border-box;
 }
@@ -423,7 +427,7 @@ animation: movement 100s linear infinite reverse;
 #store_map{
     width: 1432px;
     margin: 0 auto;
-    padding-bottom: 200px;
+    padding-bottom: 150px;
 }
 #store_map h1{
     padding-top: 200px;
@@ -436,15 +440,19 @@ animation: movement 100s linear infinite reverse;
     display: flex;
     padding-top: 100px;
 }
-h4{
+#store_map h4{
     font-size: 35px;
     padding-bottom: 50px;
 }
-h5{
+#store_map h5{
     font-size: 30px;
     font-weight: 600;
     padding-bottom: 20px;
 }
+.detail_info p, .transport p{
+    padding-left: 15px;
+}
+
 #store_map ul li p{
     font-size: 25px;
     padding-bottom: 30px;

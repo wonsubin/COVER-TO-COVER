@@ -38,6 +38,9 @@ body{
 #top ul li{
     padding-right: 30px;
 }
+#top ul li:last-child{
+    padding-right: 0;
+}
 .logo{
     padding: 20px 0;
 
