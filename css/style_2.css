@@ -29,7 +29,7 @@ body{
     left: 0;
     width: 100%;
     background-color: #fff;
-    z-index: 9;
+    z-index: 11;
     transition: top 0.2s;
 }
 #top{
