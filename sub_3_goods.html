@@ -179,30 +179,39 @@
             <h1>Trending Now</h1>
             <!-- Swiper -->
             <div class="swiper tn">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper tn_wrapper">
                 <div class="swiper-slide">
-                    <img src="./images/goods_trending_goods_1.png" alt="굿즈 이미지1">
-                    <p class="brand">커버 투 커버</p>
-                    <p class="product">[책갈피] 세잎 클로버와 나뭇잎</p>
-                    <p class="price">3,500원</p>
+                    <div class="margin_box">
+                        <img src="./images/goods_trending_goods_1.png" alt="굿즈 이미지1">
+                        <p class="brand">커버 투 커버</p>
+                        <p class="product">[책갈피] 세잎 클로버와 나뭇잎</p>
+                        <p class="price">3,500원</p>
+                    </div><!--margin_box-->
+                    
                 </div><!--swiper-slide-->
                 <div class="swiper-slide">
-                    <img src="./images/goods_trending_goods_2.png" alt="굿즈 이미지2">
-                    <p class="brand">커버 투 커버</p>
-                    <p class="product">커버 투 커버 수첩</p>
-                    <p class="price">5,000원</p>
+                    <div class="margin_box">
+                        <img src="./images/goods_trending_goods_2.png" alt="굿즈 이미지2">
+                        <p class="brand">커버 투 커버</p>
+                        <p class="product">커버 투 커버 수첩</p>
+                        <p class="price">5,000원</p>
+                    </div><!--margin_box-->                  
                 </div><!--swiper-slide-->
                 <div class="swiper-slide">
-                    <img src="./images/goods_trending_goods_3.png" alt="굿즈 이미지3">
-                    <p class="brand">커버 투 커버</p>
-                    <p class="product">[스페셜 굿즈] 여름을 한 입 베어..</p>
-                    <p class="price">18,900원</p>
+                    <div class="margin_box">
+                        <img src="./images/goods_trending_goods_3.png" alt="굿즈 이미지3">
+                        <p class="brand">커버 투 커버</p>
+                        <p class="product">[스페셜 굿즈] 여름을 한 입 베어..</p>
+                        <p class="price">18,900원</p>
+                    </div><!--margin_box-->
                 </div><!--swiper-slide-->
                 <div class="swiper-slide">
-                    <img src="./images/goods_trending_goods_4.png" alt="굿즈 이미지4">
-                    <p class="brand">커버 투 커버</p>
-                    <p class="product">[책갈피] 노을과 아이</p>
-                    <p class="price">6,500원</p>
+                    <div class="margin_box">
+                        <img src="./images/goods_trending_goods_4.png" alt="굿즈 이미지4">
+                        <p class="brand">커버 투 커버</p>
+                        <p class="product">[책갈피] 노을과 아이</p>
+                        <p class="price">6,500원</p>
+                    </div><!--margin_box-->                    
                 </div><!--swiper-slide-->
                 </div><!--swiper-wrapper-->
                 <div class="swiper-scrollbar"></div>
@@ -217,30 +226,38 @@
             <h1>BEST</h1>
             <!-- Swiper -->
             <div class="swiper best">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper best_wrapper">
                     <div class="swiper-slide">
+                        <div class="margin_box">
                         <img src="./images/goods_best_goods_1.png" alt="굿즈 이미지1">
                                 <p class="brand">커버 투 커버</p>
                                 <p class="product">[책갈피] 커버 투 커버 책갈피</p>
                                 <p class="price">6,500원</p>
+                        </div><!--margin_box-->
                     </div><!--swiper-slide-->
                     <div class="swiper-slide">
-                        <img src="./images/goods_best_goods_2.png" alt="굿즈 이미지2">
+                        <div class="margin_box">
+                            <img src="./images/goods_best_goods_2.png" alt="굿즈 이미지2">
                             <p class="brand">커버 투 커버</p>
                             <p class="product">커버 투 커버 노트 & 스티커</p>
                             <p class="price">20,000원</p>
+                        </div><!--margin_box-->
                     </div><!--swiper-slide-->
                     <div class="swiper-slide">
-                    <img src="./images/goods_best_goods_3.png" alt="굿즈 이미지3">
-                        <p class="brand">커버 투 커버</p>
-                        <p class="product">커버 투 커버 볼캡</p>
-                        <p class="price">28,000원</p>
+                        <div class="margin_box">
+                            <img src="./images/goods_best_goods_3.png" alt="굿즈 이미지3">
+                            <p class="brand">커버 투 커버</p>
+                            <p class="product">커버 투 커버 볼캡</p>
+                            <p class="price">28,000원</p>
+                        </div><!--margin_box-->
                     </div><!--swiper-slide-->
                     <div class="swiper-slide">
-                        <img src="./images/goods_best_goods_4.png" alt="굿즈 이미지4">
+                        <div class="margin_box">
+                            <img src="./images/goods_best_goods_4.png" alt="굿즈 이미지4">
                             <p class="brand">커버 투 커버</p>
                             <p class="product">커버 투 커버 향초 세트</p>
                             <p class="price">25,000원</p>
+                        </div><!--margin_box-->
                     </div><!--swiper-slide-->
                     </div><!--swiper-wrapper-->
                 <div class="swiper-pagination"></div>
@@ -304,7 +321,7 @@
      <!-- trending Initialize Swiper -->
         <script>
             var swiper = new Swiper(".tn", {
-            slidesPerView: 4,
+            slidesPerView: "auto",
             scrollbar: {
                 el: ".swiper-scrollbar",
                 hide: true,
@@ -314,8 +331,7 @@
     <!-- best Initialize Swiper -->
         <script>
             var swiper = new Swiper(".best", {
-            slidesPerView: 4,
-            spaceBetween: 30,
+            slidesPerView: "auto",
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
