@@ -165,7 +165,6 @@ h1{
     justify-content: space-between;
 }
 .f_text_box{
-    padding-left: 50%; 
     display: flex;
     padding-bottom: 50px;
 }

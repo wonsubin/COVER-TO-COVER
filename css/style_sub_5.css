@@ -479,7 +479,6 @@ animation: movement 100s linear infinite reverse;
     justify-content: space-between;
 }
 .f_text_box{
-    padding-left: 50%; 
     display: flex;
     padding-bottom: 50px;
 }

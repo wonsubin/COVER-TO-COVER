@@ -1,0 +1,1002 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+ul, ol{ 
+    list-style: none;
+}
+img, video, iframe{
+    vertical-align: middle;
+}
+body{
+    min-width: 1500px;
+    font-family: 'Pretendard';
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+}
+/*이미지 사이즈가 1920px 일때 반드시 이미지에 width:100% 사용해주기*/
+
+/*top*/
+#top_box{
+    border-bottom: 2px solid #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 9;
+    transition: top 0.2s;
+}
+#top{
+    width: 1432px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#top ul{
+    display: flex;
+} 
+#top ul li{
+    padding-right: 30px;
+}
+#top ul li:last-child{
+    padding-right: 0;
+}
+.logo{
+    padding: 20px 0;
+
+}
+.search{
+    width: 570px;
+    height: 55px;
+    border: 3px solid #000;
+    border-radius: 29px;
+    background-color: #fff;
+    padding: 20px;
+    padding-left: 30px;
+    outline-style: none;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/icon_search.png);
+    background-repeat: no-repeat;
+    background-position: 97% center;
+}
+
+.nav-up {
+    top: -116px !important;
+    /*헤더 높이와 같이*/
+  }
+
+  .nav-down {
+    top: 0px !important;
+  }
+
+/*header*/
+#header{
+    border-bottom: 2px solid #333;
+    padding-top: 116px;
+}
+.header_inner{
+    width: 1432px;
+    margin: 0 auto;
+    position: relative;
+}
+.icon_category{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.header_inner ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_inner ul li{
+    font-size: 20px;
+    padding: 18px 85px;
+    font-weight: 800;
+    display:inline-block; 
+    margin:0;
+    text-transform:uppercase;
+}
+
+.header_inner ul li:after {
+  display:block;
+  content: '';
+  border-bottom: solid 2px #000;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+.header_inner ul li:hover:after {
+    transform: scaleX(1); 
+}
+.header_inner ul li a:hover:after {
+    color: #333;
+}
+.header_inner ul li:after{  transform-origin:  0% 50%; }
+
+
+/*main_banner*/
+.mb h5{
+    font-size: 40px;
+    position: absolute;
+    top: 90px;
+    left: 244px;
+    line-height: 1.4;
+}
+.mb .swiper-slide{
+    position: relative;
+}
+.mb img{
+    width: 100%;
+}
+/*복사 필요 스타일 시작*/
+/*프로그래스 바 위치 변경*/
+.mb .all-box {
+position: absolute;
+display: flex;
+right: 225px;
+top: 160px;
+box-sizing: border-box;
+padding-right: 60px;
+z-index: 20;
+
+}
+.mb .progress-box {
+position: relative;
+width: 240px;
+z-index: 11;
+}
+.autoplay-progress {
+position: absolute;
+left: 30px;
+top: 10px;
+z-index: 10;
+width: 180px;
+height: 3px;
+background-color: rgba(0, 0, 0, 0.1);
+}
+
+.autoplay-progress svg {
+--progress: 0;
+position: absolute;
+left: 0;
+top: 0;
+z-index: 10;
+width: 100%;
+/*  height: 100%;*/
+stroke-width: 4px;
+stroke: #000;
+fill: none;
+stroke-dashoffset: calc(100 * (1 - var(--progress)));
+stroke-dasharray: 100;
+}
+/* stroke-dashoffset은 선의 테두리가 얼마나 이동하는지 결정 progress라는 변수를 사용하여 계산되어진 값이 들어감 100은전체길이 
+stroke-dasharray는 선의 테두리를 구성하는 선 조각의 길이를 설정 전체길이가 100
+*/
+.mb .swiper-pagination {
+display: flex;
+color: #000;
+font-weight: 600;
+justify-content: space-between;
+position: static;
+text-align: left;
+}
+
+
+.mb .swiper-button-next,
+.mb .swiper-button-prev {
+    width: 21px;
+    height: 21px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 0;
+}
+.mb .swiper-button-next{
+    color: #e4e4e4;
+    right: 0;
+    font-weight: bold;
+}
+.mb .swiper-button-prev {
+    left: auto;
+    right: 30px;
+    font-weight: bold;
+    color: #e4e4e4;
+}
+
+/*화살표 크기 설정*/
+.mb .swiper-button-next::after,
+.mb .swiper-button-prev::after {
+font-size: 14px;
+color: #000;
+}
+/*필요스타일 끝*/
+
+.mb .swiper-button-next::after{
+    content: url(../images/icon_grey_right-arrow.png);
+}
+.mb .swiper-button-prev::after {
+    content: url(../images/icon_grey_left-arrow.png);
+}
+
+/*comment*/
+#comment{
+    padding-top: 150px;
+    padding-bottom: 200px; 
+    width: 1432px;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+    font-size: 45px;
+    padding-bottom: 80px;
+}
+h3{
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+h2{
+    font-size: 35px;
+    padding-bottom: 70px;
+}
+#comment ul{
+    display: flex;
+    justify-content: space-between;
+}
+#comment ul li{
+    width: 420px;
+    height: 590px;
+}
+#comment ul li .img_book{
+    display: block;
+    margin: 0 auto;
+    width: 230px;
+    height: 335px;
+}
+
+.comment_inner{
+    position: relative;
+}
+.more_btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.more_btn a{
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    width: 80px;
+    justify-content: space-between;
+}
+.green_box{
+    background-image: url(../images/main_comment_bg1.png);
+    background-repeat: no-repeat;
+}
+.purple_box{
+    background-image: url(../images/main_comment_bg2.png);
+    background-repeat: no-repeat;
+}
+.blue_box{
+    background-image: url(../images/main_comment_bg3.png);
+    background-repeat: no-repeat;
+}
+.green_box, .purple_box, .blue_box{
+    padding-top: 35px;
+    box-sizing: border-box;
+    padding-bottom: 50px;
+    border-radius: 30px;
+    height: 590px;
+}
+.green_box:hover .b_rotate, .purple_box:hover .b_rotate, .blue_box:hover .b_rotate{
+    transform: rotateY(180deg);
+}
+.green_box:hover .img_book_back, .purple_box:hover .img_book_back, .blue_box:hover .img_book_back{
+    opacity: 1;
+}
+.b_rotate{
+    position: relative;
+    height: 356px;
+    transition: all 0.5s;
+}
+.b_rotate .img_book{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.b_rotate .img_book_back{
+    transition: all 0.5s;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%) rotateY(180deg);
+    opacity: 0;
+}
+#comment ul li .green_box .white_box .comment_box,
+#comment ul li .purple_box .white_box .comment_box,
+#comment ul li .blue_box .white_box .comment_box{
+    width: 390px;
+    height: 150px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 20px;
+
+}
+#comment ul li .green_box .white_box .comment_box .slide_content{
+    justify-content: flex-start;
+    position: relative;
+    align-items: center;
+}
+#comment ul li .green_box .white_box .comment_box .slide_content li{
+    height: 100%;
+}
+#comment ul li .green_box .white_box .comment_box .slide_content .i_user{
+    width: 40px;
+    height: 40px;
+}
+.slide_content li .name{
+    padding-left: 20px ;
+    font-size: 15px;
+    font-weight: 600;
+}
+.comment_box .swiper-slide{
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+ .comment_box .swiper-slide p{
+    padding-top: 20px;
+    font-size: 18px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-word;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /*원하는 라인 수*/
+    -webkit-box-orient: vertical
+}
+.i_star{
+    width: 83px;
+    height: 15px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+#comment ul li .purple_box .white_box .comment_box .slide_content{
+    justify-content: flex-start;
+    position: relative;
+    align-items: center;
+}
+#comment ul li .purple_box .white_box .comment_box .slide_content li{
+    height: 100%;
+}
+#comment ul li .purple_box .white_box .comment_box .slide_content .i_user{
+    width: 40px;
+    height: 40px;
+}
+
+
+#comment ul li .blue_box .white_box .comment_box .slide_content{
+    justify-content: flex-start;
+    position: relative;
+    align-items: center;
+}
+#comment ul li .blue_box .white_box .comment_box .slide_content li{
+    height: 100%;
+}
+#comment ul li .blue_box .white_box .comment_box .slide_content .i_user{
+    width: 40px;
+    height: 40px;
+}
+.white_box{
+    padding-top: 35px;
+}
+/*today*/
+#today{
+    width: 1432px;
+    margin: 0 auto;
+    padding-bottom: 150px;
+    justify-content: space-between;
+}
+.today_inner{
+    position: relative;
+}
+.today_box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabs{
+    width: 383px;
+}
+.tab_container{
+    width: 1050px;
+    height: 530px;
+}
+.tabs li{
+    font-size: 16px;
+    font-weight: 500;
+}
+.tabs li a{
+    display: inline-block;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin: 5px 0;
+    border-radius: 20px;
+    padding: 6px 12px;
+
+}
+.tabs li a:hover{
+    background-color: #000;
+    color: #fff;
+    transition: all 0.5s;
+}
+/*active라는 클래스가 내가 클릭한 부분에 들어가므로, 
+현재 표시하고 있는 탭의 버튼 스타일은 active라는 클래스를 활용하여 꾸민다.*/
+
+.active a{
+    background-color: #000;
+    font-weight: 500;
+    color: #fff;
+}
+
+#today .tab_list{
+    width: 135px;
+    display: flex;
+    flex-direction: column;
+}
+#today .tab_list li{
+    margin-bottom: 10px;
+}
+#today .tab_list li a{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 19px;
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.recommend_box{
+    width: 1050px;
+    height: 530px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    box-sizing: border-box;
+
+}
+.tab_content{
+    background-image: url(../images/main_today_box_bg.png);
+}
+.recommend_box .r_b_img_box{
+    width: 445px;
+    height: 445px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tab1 .recommend_box .t_bg1{
+    background-image: url(../images/main_today_b_bg_1.png);
+    background-repeat: no-repeat;
+}
+#tab2 .recommend_box .t_bg2{
+    background-image: url(../images/main_today_b_bg_2.png);
+    background-repeat: no-repeat;
+}
+#tab3 .recommend_box .t_bg3{
+    background-image: url(../images/main_today_b_bg_3.png);
+    background-repeat: no-repeat;
+}
+#tab4 .recommend_box .t_bg4{
+    background-image: url(../images/main_today_b_bg_4.png);
+    background-repeat: no-repeat;
+}
+#tab5 .recommend_box .t_bg5{
+    background-image: url(../images/main_today_b_bg_5.png);
+    background-repeat: no-repeat;
+}
+#tab6 .recommend_box .t_bg6{
+    background-image: url(../images/main_today_b_bg_6.png);
+    background-repeat: no-repeat;
+}
+#tab7 .recommend_box .t_bg7{
+    background-image: url(../images/main_today_b_bg_7.png);
+    background-repeat: no-repeat;
+}
+
+.recommend_box .r_b_img_box a img{
+    width: 230px;
+    height: 335px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    transform: rotate3d(0, 1, 0, 0)
+}
+.recommend_box .r_b_img_box a:hover img{
+    transform: scale(1.1, 1.1);
+}
+.recommend_box .r_text_box{
+    width: 445px;
+    height: 445px;
+    padding: 0 30px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    background-color: #F4F4F4;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.recommend_box .r_text_box .r_text_box_inner{
+    display: flex;
+    align-items: center;
+}
+.recommend_box .r_text_box .r_text_box_inner li .name{
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+}
+.recommend_box .re_sentence{
+    width: 345px;
+    height: 150px;
+    font-size: 18px;
+    font-weight: 500;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.r_text_box .re_point{
+    border-top: 1px solid #E4E4E4;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+.recommend_box .r_text_box .re_point ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.r_text_box .re_point ul li img{
+    padding-right: 10px;
+}
+.r_text_box .re_point ul .re_text{
+    font-size: 15px;
+    font-weight: 500;
+    color: #555;
+    width: 90%;
+}
+
+/*ctc_slide*/
+ #ctc_slide {
+    width: 100%;
+    height: 100px;
+    /*배경이미지 높이로 설정*/
+    background: url(../images/move_logo.png) repeat-x left top;
+    background-size: 745px 100px;
+    animation: movement 10s linear infinite;
+    padding-bottom: 150px;
+}
+  @keyframes movement {
+    0% {
+      background-position: 0px 0px;
+    }
+
+    100% {
+      background-position: 745px 0px;
+      /*배경이미지 길이만큼 설정합니다!*/
+    }
+}
+
+/*best_seller*/
+#best_seller{
+    background-image: url(../images/best_seller_bg.png);
+}
+.best_seller_inner{
+    width: 1432px;
+    margin: 0 auto;
+    display: flex;
+    padding: 200px 0;
+}
+.b_left_box{
+    width: 716px;
+}
+.sticky_box{
+    position: sticky;
+    top: 50px;
+    left: 0;
+}
+.b_right_box{
+    width: 716px;
+    padding-top: 150px;
+}
+.b_right_box ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.b_right_box ul li{
+    width: 300px;
+}
+.b_right_box ul li .b_genre{
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 35px;
+    padding-bottom: 15px;
+}
+.b_right_box ul li .b_title{
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+.b_right_box ul li .b_writer{
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 150px;
+}
+.rb_padding{
+    padding-right: 100px;
+}
+.view_more_btn{
+    background-image: url(../images/view_more_btn.png);
+    padding: 45px 260px;
+    padding-top: 60px;
+    font-size: 25px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.b_genre{
+    color: #767676;
+}
+.b_writer{
+    color: #595959;
+}
+
+/*new_book*/
+#new_book{
+    padding: 150px 0;
+
+}
+.new_book_inner{
+    width: 1432px;
+    margin: 0 auto;
+    position: relative;
+
+}
+.nb_card img{
+    width:100%;
+}
+.new_book_slide{
+    background-color: #e2e2e260;
+    height: 500px;
+    border-radius: 30px;
+    padding-bottom: 100px;
+}
+.nb_card .swiper-slide img{
+    padding-bottom: 20px;
+}
+.nb_card .swiper-slide p{
+    padding-bottom: 10px;
+}
+.nb_card .swiper-slide{
+    padding:10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 10px;
+    
+}
+.new_book_slide{
+    width:1432px;
+}
+.nb_card{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.n_next {
+    left: -50px;
+    right: auto;
+}
+
+.n_prev{
+    right: -50px;
+    left: auto;
+}
+
+/*지금 현재 가운데 보이고 있는 슬라이드는 .swiper-slide-active 라는 클래스를 가지는데 이를 이용해 스타일을 꾸며줌. 슬라이드가 3개일때 앞뒤로는 swiper-slide-prev, swiper-slide-next 클래스가 부여되는 이를 활용. slide개수가 4개 이상이면 모양이 제대로 잡히지 않으므로, 3개 이하일때 사용할것.*/
+
+.nb_card .swiper-slide {
+    transform: scale(0.8);
+    opacity: 0.3;
+}
+
+.nb_card .swiper-slide-prev,
+.nb_card .swiper-slide-next {
+    opacity: 0.5;
+}
+.nb_card .swiper-slide-active{
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.5s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.n_genre{
+    font-size: 12px;
+    color: #767676;
+}
+.n_title{
+    font-size: 20px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.n_writer{
+    font-size: 12px;
+    color: #595959;
+}
+.nb_next{
+    color: #fff;
+    right: -50px;
+}
+.nb_prev{
+    color: #fff;
+    left: -50px;
+}
+.n_pag span{
+    background-color: #fff;
+}
+
+/*ad*/
+#ad{
+    background-image: url(../images/banner_ad.jpg);
+    width: 100%;
+    height: 180px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #A1BF83;
+}
+
+/*goods_best*/
+#goods_best{
+    padding-top: 150px;
+    border-bottom: 1px solid #8f8f8f;
+}
+.goods_best_inner{
+    width: 1432px;
+    margin: 0 auto;
+    position: relative;
+}
+.h2_pad{
+    padding-bottom: 70px;
+}
+
+.b_goods img{
+    width:100%;
+}
+.b_goods .swiper-slide p{
+    padding-bottom: 30px;
+}
+.b_goods .swiper-slide{
+    padding:10px;
+    box-sizing: border-box;
+    position: relative;
+
+}
+.bg_heart{
+    position: absolute;
+    bottom: 92px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+}
+.bg_prev {
+    left: -50px;
+    right: auto;
+}
+
+.bg_next{
+    right: -50px;
+    left: auto;
+}
+.bg_name{
+    padding-top: 27px;
+    font-size: 22px;
+    font-weight: 500;
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.bg_price{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+/*커서*/
+#goods_best{
+    cursor: url(http://circulardev.com/nike/cortez/dist/images/cortez-pointer.png), auto;
+    cursor: -webkit-image-set(url(http://circulardev.com/nike/cortez/dist/images/cortez-pointer.png) 1x, url(http://circulardev.com/nike/cortez/dist/images/cortez-pointer@2x.png) 2x), auto;
+ }
+ 
+.b_goods:hover,
+.b_goods:hover{
+    cursor: url(../images/cursor_img.png), auto;
+    cursor: -webkit-image-set(url(../images/cursor_img.png) 1x, url(../images/cursor_img.png) 2x), auto;
+ }
+ 
+
+/*goods_new*/
+#goods_new{
+    width: 1432px;
+    margin: 0 auto;
+    padding-top: 200px;
+    padding-bottom: 150px;
+}
+.gn_inner{
+    position: relative;
+}
+.gn_item_box{
+    background-image: url(../images/ng_background_7.jpg);
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    
+}
+.n_item{
+    text-align: center;
+
+    height: 700px;
+}
+.ng_slide{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ng_white_box{
+    background-color: white;
+    width:360px;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    padding: 23px;
+    line-height: 1.7;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: none;
+}
+.ng_made{
+    font-size: 14px;
+    font-weight: 500;
+    color: #767676;
+}
+.ng_name{
+    font-size: 20px;
+    font-weight: 600;
+}
+.ng_price{
+    font-size: 22px;
+    font-weight: 500;
+    padding-bottom: 8px;
+}
+.ng_white_box ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.swiper-slide-active .ng_white_box{
+    display: block;
+}
+
+/*커서*/
+#goods_new{
+    cursor: url(http://circulardev.com/nike/cortez/dist/images/cortez-pointer.png), auto;
+    cursor: -webkit-image-set(url(http://circulardev.com/nike/cortez/dist/images/cortez-pointer.png) 1x, url(http://circulardev.com/nike/cortez/dist/images/cortez-pointer@2x.png) 2x), auto;
+ }
+ 
+.gn_inner .gn_item_box:hover,
+.gn_inner .gn_item_box:hover{
+    cursor: url(../images/cursor_img.png), auto;
+    cursor: -webkit-image-set(url(../images/cursor_img.png) 1x, url(../images/cursor_img.png) 2x), auto;
+ }
+ 
+
+
+
+/*event*/
+.event_inner{
+    width: 1432px;
+    margin: 0 auto;
+    padding-bottom: 150px;
+    position: relative;
+}
+.more_btn_2{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.more_btn_2 a{
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    width: 80px;
+    justify-content: space-between;
+}
+/*footer*/
+#footer{
+    border-top: 1px solid #e4e4e4;
+}
+.footer_inner1{
+    width: 1432px;
+    margin: 0 auto;    
+    padding: 50px 0;
+    font-size: 18px;
+    line-height: 1.7;
+    font-weight: 500;
+}
+.footer_inner2{
+    display: flex;
+
+    justify-content: space-between;
+}
+.f_text_box{
+    display: flex;
+    padding-bottom: 50px;
+}
+.f_left_text{
+    padding-right: 191px;
+}
+.f_left_text a{
+    display: block;
+}
+.f_pad{
+    padding-right: 15px;
+}
+
+.top_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 50px;
+    bottom: 60px;
+    z-index: 99;
+    transition: all 0.5s;
+}
+.top_btn:hover{
+    transform: rotate(-20deg);
+}              
