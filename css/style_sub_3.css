@@ -227,7 +227,12 @@ h1{
 .tn .swiper-wrapper .swiper-slide{
     width: 300px;
 }
-
+.margin_box{
+    margin: 0 auto;
+}
+.tn_wrapper, .best_wrapper{
+    justify-content: space-between;
+}
 .brand{
     font-size: 15px;
     font-weight: 500;
@@ -267,7 +272,9 @@ h1{
 .best_inner{
     position: relative;
 }
-
+.best .swiper-wrapper .swiper-slide{
+    width: 300px;
+}
 .more_btn{
     position: absolute;
     top: 0;
