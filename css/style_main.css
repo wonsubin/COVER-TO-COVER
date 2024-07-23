@@ -845,8 +845,8 @@ h2{
 
 /*커서*/
 #goods_best{
-    cursor: url(http://circulardev.com/nike/cortez/dist/images/cortez-pointer.png), auto;
-    cursor: -webkit-image-set(url(http://circulardev.com/nike/cortez/dist/images/cortez-pointer.png) 1x, url(http://circulardev.com/nike/cortez/dist/images/cortez-pointer@2x.png) 2x), auto;
+    cursor: url(../images/icon_cursor_2.png), auto;
+    cursor: -webkit-image-set(url(../images/icon_cursor_2.png) 1x, url(../images/icon_cursor_2.png) 2x), auto;
  }
  
 .b_goods:hover,
@@ -923,14 +923,14 @@ h2{
 
 /*커서*/
 #goods_new{
-    cursor: url(http://circulardev.com/nike/cortez/dist/images/cortez-pointer.png), auto;
-    cursor: -webkit-image-set(url(http://circulardev.com/nike/cortez/dist/images/cortez-pointer.png) 1x, url(http://circulardev.com/nike/cortez/dist/images/cortez-pointer@2x.png) 2x), auto;
+    cursor: url(../images/icon_cursor_2.png), auto;
+    cursor: -webkit-image-set(url(../images/icon_cursor_2.png) 1x, url(../images/icon_cursor_2.png) 2x), auto;
  }
  
 .gn_inner .gn_item_box:hover,
 .gn_inner .gn_item_box:hover{
-    cursor: url(../images/icon_cursor.png), auto;
-    cursor: -webkit-image-set(url(../images/icon_cursor.png) 1x, url(../images/icon_cursor.png) 2x), auto;
+    cursor: url(../images/icon_cursor_2.png), auto;
+    cursor: -webkit-image-set(url(../images/icon_cursor_2.png) 1x, url(../images/icon_cursor_2.png) 2x), auto;
  }
  
 
