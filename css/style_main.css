@@ -20,6 +20,32 @@ body{
     line-height: 24px;
     color: #000;
 }
+
+/* 임의의 영역 생성 */
+body { 
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+  }
+  
+  /* 아래의 모든 코드는 영역::코드로 사용 */
+  body::-webkit-scrollbar {
+      width: 10px;  /* 스크롤바의 너비 */
+  }
+  body::-webkit-scrollbar-thumb {
+      height: 10%; /* 스크롤바의 길이 */
+      background: #111111; /* 스크롤바의 색상 */
+      
+      border-radius: 10px;
+  }
+  
+  .scrollBar::-webkit-scrollbar-track {
+      background: rgba(53, 53, 53, 0.1);  /*스크롤바 뒷 배경 색상*/
+  }
+  body::-webkit-scrollbar-track,
+  body::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+}
 /*이미지 사이즈가 1920px 일때 반드시 이미지에 width:100% 사용해주기*/
 
 /*top*/
