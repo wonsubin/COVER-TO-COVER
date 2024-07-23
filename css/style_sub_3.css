@@ -231,6 +231,12 @@ h1{
 }
 .tn{
     padding-bottom: 30px;
+    
+}
+.tn .swiper-wrapper{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
 .tn .swiper-wrapper .swiper-slide{
     width: 300px;
@@ -275,7 +281,15 @@ h1{
 .best_inner{
     position: relative;
 }
+.best .swiper-wrapper{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 
+}
+.best .swiper-wrapper .swiper-slide{
+    width: 300px;
+}
 .more_btn{
     position: absolute;
     top: 0;
