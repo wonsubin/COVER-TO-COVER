@@ -460,11 +460,11 @@ animation: movement 100s linear infinite reverse;
     padding-top: 100px;
 }
 #store_map h4{
-    font-size: 35px;
+    font-size: 30px;
     padding-bottom: 50px;
 }
 #store_map h5{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
     padding-bottom: 20px;
 }
@@ -473,7 +473,7 @@ animation: movement 100s linear infinite reverse;
 }
 
 #store_map ul li p{
-    font-size: 25px;
+    font-size: 20px;
     padding-bottom: 30px;
 }
 #store_map ul li:last-child{
