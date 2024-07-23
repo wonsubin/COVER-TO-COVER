@@ -115,11 +115,11 @@ h1{
 }
 #whole_product ul{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 #whole_product>ul li{
     padding-bottom: 50px;
+    padding-right: 51px;
 }
 #whole_product>ul li img{
     padding-bottom: 23px;
@@ -130,10 +130,15 @@ h1{
     color: #999999;
     padding-bottom: 17px;
 }
-.p_name{
+.p_name a{
     font-size: 20px;
     font-weight: 600;
     padding-bottom: 23px;
+    width: 320px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
 }
 .p_price{
     font-size: 18px;
@@ -174,17 +179,17 @@ h1{
     padding-right: 15px;
 }
 .top_btn{
-    display: inline-block;
-    background-color: #8f8f8f;
-    padding: 10px;
-    width: 30px;
-    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
-    right: 40px;
-    bottom: 40px;
+    right: 50px;
+    bottom: 60px;
     z-index: 99;
+    transition: all 0.5s;
 }
+.top_btn:hover{
+    transform: rotate(-20deg);
+}              
+
 

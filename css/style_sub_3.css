@@ -191,6 +191,18 @@ h1{
     display: block;
 }
 
+/*커서*/
+#new{
+    cursor: url(http://circulardev.com/nike/cortez/dist/images/cortez-pointer.png), auto;
+    cursor: -webkit-image-set(url(http://circulardev.com/nike/cortez/dist/images/cortez-pointer.png) 1x, url(http://circulardev.com/nike/cortez/dist/images/cortez-pointer@2x.png) 2x), auto;
+ }
+ 
+.new_inner .n_item:hover,
+.new_inner .n_item:hover{
+    cursor: url(../images/icon_cursor.png), auto;
+    cursor: -webkit-image-set(url(../images/icon_cursor.png) 1x, url(../images/icon_cursor.png) 2x), auto;
+ }
+ 
 
 /*category*/
 #category{
@@ -227,12 +239,7 @@ h1{
 .tn .swiper-wrapper .swiper-slide{
     width: 300px;
 }
-.margin_box{
-    margin: 0 auto;
-}
-.tn_wrapper, .best_wrapper{
-    justify-content: space-between;
-}
+
 .brand{
     font-size: 15px;
     font-weight: 500;
@@ -272,9 +279,7 @@ h1{
 .best_inner{
     position: relative;
 }
-.best .swiper-wrapper .swiper-slide{
-    width: 300px;
-}
+
 .more_btn{
     position: absolute;
     top: 0;

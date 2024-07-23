@@ -233,7 +233,18 @@ h1{
     background-color: #ededed;
     box-sizing: border-box;
 }
-
+/*커서*/
+#new_more{
+    cursor: url(http://circulardev.com/nike/cortez/dist/images/cortez-pointer.png), auto;
+    cursor: -webkit-image-set(url(http://circulardev.com/nike/cortez/dist/images/cortez-pointer.png) 1x, url(http://circulardev.com/nike/cortez/dist/images/cortez-pointer@2x.png) 2x), auto;
+ }
+ 
+.new_box:hover,
+.new_box .n_more .swiper-slide:hover{
+    cursor: url(../images/icon_cursor.png), auto;
+    cursor: -webkit-image-set(url(../images/icon_cursor.png) 1x, url(../images/icon_cursor.png) 2x), auto;
+ }
+ 
 
 
 /*best*/
