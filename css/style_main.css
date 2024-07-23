@@ -844,12 +844,7 @@ h2{
 
 
 /*커서*/
-#goods_best{
-    cursor: url(../images/icon_cursor_2.png), auto;
-    cursor: -webkit-image-set(url(../images/icon_cursor_2.png) 1x, url(../images/icon_cursor_2.png) 2x), auto;
- }
- 
-.b_goods:hover,
+
 .b_goods:hover{
     cursor: url(../images/icon_cursor_2.png), auto;
     cursor: -webkit-image-set(url(../images/icon_cursor_2.png) 1x, url(../images/icon_cursor_2.png) 2x), auto;
@@ -922,12 +917,6 @@ h2{
 }
 
 /*커서*/
-#goods_new{
-    cursor: url(../images/icon_cursor_2.png), auto;
-    cursor: -webkit-image-set(url(../images/icon_cursor_2.png) 1x, url(../images/icon_cursor_2.png) 2x), auto;
- }
- 
-.gn_inner .gn_item_box:hover,
 .gn_inner .gn_item_box:hover{
     cursor: url(../images/icon_cursor_2.png), auto;
     cursor: -webkit-image-set(url(../images/icon_cursor_2.png) 1x, url(../images/icon_cursor_2.png) 2x), auto;

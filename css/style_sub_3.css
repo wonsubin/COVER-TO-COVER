@@ -192,16 +192,7 @@ h1{
 }
 
 /*커서*/
-#new{
-    cursor: url(../images/icon_cursor_2.png), auto;
-    cursor: -webkit-image-set(url(../images/icon_cursor_2.png) 1x, url(../images/icon_cursor_2.png) 2x), auto;
- }
 
- #new a{
-    cursor: url(../images/icon_cursor_2.png), auto;
-    cursor: -webkit-image-set(url(../images/icon_cursor_2.png) 1x, url(../images/icon_cursor_2.png) 2x), auto;
- }
- 
 .new_inner .n_item:hover,
 .new_inner .n_item:hover{
     cursor: url(../images/icon_cursor_2.png), auto;
