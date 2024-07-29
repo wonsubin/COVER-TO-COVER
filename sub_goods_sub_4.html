@@ -57,7 +57,7 @@
             <a href="#" class="icon_category">
                 <img src="./images/icon_category.png" alt="카테고리 아이콘">
             </a>
-            <ul>
+            <ul class="gnb">
                 <li>
                     <a href="./sub_1_Books.html">BOOKS</a>
                 </li>
@@ -66,18 +66,25 @@
                 </li>
                 <li>
                     <a href="./sub_3_goods.html">GOODS</a>
+                        <ul class="sub">
+                            <li><a href="./sub_goods_sub_1.html">전체 상품</a></li>
+                            <li><a href="./sub_goods_sub_2.html">COVER MADE</a></li>
+                            <li><a href="./sub_goods_sub_3.html">문구 & 독서용품</a></li>
+                            <li><a href="./sub_goods_sub_4.html">리빙</a></li>
+                            <li><a href="./sub_goods_sub_5.html">라이프</a></li>
+                        </ul><!--sub-->
                 </li>
                 <li>
                     <a href="./sub_4_event.html">EVENT</a>
                 </li>
                 <li>
-                    <a href="./sub_5_brand.html">BRAND</a>
+                    <a href="./sub_5_brand.html">ABOUT US</a>
                 </li>
             </ul>
         </div><!--header_inner-->
     </div><!--header-->
     <div id="whole_product">
-        <h1>생활</h1>
+        <h1>리빙</h1>
         <div class="whole_inner">
             <div class="option">
                 <ul>
@@ -153,5 +160,65 @@
     <a href="#" class="top_btn">
         <img src="./images/top_btn_icon.png" alt="top버튼이미지">
     </a>
+
+
+
+
+
+
+
+
+
+
+      <!--스크롤다운-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ <script>
+   // Hide Header on on scroll down
+   var didScroll;
+   var lastScrollTop = 0;
+   var delta = 5;
+   var navbarHeight = $('#header').outerHeight();
+
+   $(window).scroll(function (event) {
+     didScroll = true;
+   });
+
+   setInterval(function () {
+     if (didScroll) {
+       hasScrolled();
+       didScroll = false;
+     }
+   }, 250);
+
+   function hasScrolled() {
+     var st = $(this).scrollTop();
+
+     // Make sure they scroll more than delta
+     if (Math.abs(lastScrollTop - st) <= delta)
+       return;
+
+     // If they scrolled down and are past the navbar, add class .nav-up.
+     // This is necessary so you never see what is "behind" the navbar.
+     if (st > lastScrollTop && st > navbarHeight) {
+       // Scroll Down
+       $('#top_box').removeClass('nav-down').addClass('nav-up');
+     } else {
+       // Scroll Up
+       if (st + $(window).height() < $(document).height()) {
+         $('#top_box').removeClass('nav-up').addClass('nav-down');
+       }
+     }
+
+     lastScrollTop = st;
+   }
+ </script>
+
+ 
+
+       <!--제이쿼리 라이브러리 cdn-->
+    <!--minified-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!--서브메뉴-->
+    <script src="./js/slide_script.js"></script>
 </body>
 </html>

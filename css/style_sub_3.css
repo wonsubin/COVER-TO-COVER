@@ -113,34 +113,80 @@ top: 0px !important;
     left: 0;
     transform: translateY(-50%);
 }
-.header_inner ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.header_inner ul li{
-    font-size: 20px;
-    padding: 18px 85px;
-    font-weight: 800;
-    display:inline-block; 
-    margin:0;
-    text-transform:uppercase;
-}
-
-.header_inner ul li:after {
+.header_inner .gnb>li:after {
   display:block;
   content: '';
   border-bottom: solid 2px #000;  
   transform: scaleX(0);  
   transition: transform 250ms ease-in-out;
 }
-.header_inner ul li:hover:after {
+.header_inner .gnb>li:hover:after {
     transform: scaleX(1); 
 }
-.header_inner ul li a:hover:after {
+.header_inner .gnb>li a:hover:after{
     color: #333;
 }
-.header_inner ul li:after{  transform-origin:  0% 50%; }
+.header_inner .gnb>li:after{  transform-origin:  0% 50%; }
+
+#header .gnb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_inner .gnb>li {
+    font-size: 20px;
+    padding: 18px 85px;
+    font-weight: 800;
+    display: inline-block;
+    margin: 0;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.header_inner .sub {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px; /* 박스 크기 유지 */
+    background-color: #000;
+    display: none;
+    z-index: 30;
+    padding: 30px 0;
+}
+
+.header_inner .sub>li {
+    position: relative;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.header_inner .sub>li a {
+
+    display: inline-block; /* a 태그를 inline-block으로 설정 */
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    text-decoration: none; /* 기본 밑줄 제거 */
+    position: relative; /* 포지션을 상대적으로 설정 */
+    box-sizing: border-box; /* 패딩과 테두리를 너비에 포함 */
+}
+
+.header_inner .sub>li a::after {
+    content: '';
+    position: absolute;
+    width: 0; /* 초기 밑줄 길이 */
+    height: 1px; /* 밑줄 두께 */
+    bottom: 0; /* 텍스트 아래에 위치 */
+    left: 0;
+    background-color: #fff; /* 밑줄 색상 */
+    transition: width 250ms ease-in-out; /* 밑줄 애니메이션 효과 */
+}
+
+.header_inner .sub>li a:hover::after {
+    width: 100%; /* 호버 시 텍스트 길이만큼 밑줄 확장 */
+}
 
 /*new*/
 #new{

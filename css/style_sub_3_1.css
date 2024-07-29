@@ -39,9 +39,18 @@ body::-webkit-scrollbar-thumb {
 .scrollBar::-webkit-scrollbar-track {
     background: rgba(53, 53, 53, 0.1);  /*스크롤바 뒷 배경 색상*/
 }
+
+
 /*top*/
 #top_box{
     border-bottom: 2px solid #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 9;
+    transition: top 0.2s;
 }
 #top{
     width: 1432px;
@@ -49,6 +58,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 #top ul{
     display: flex;
@@ -68,6 +78,7 @@ body::-webkit-scrollbar-thumb {
     height: 55px;
     border: 3px solid #000;
     border-radius: 29px;
+    background-color: #fff;
     padding: 20px;
     padding-left: 30px;
     outline-style: none;
@@ -79,9 +90,19 @@ body::-webkit-scrollbar-thumb {
     background-position: 97% center;
 }
 
+.nav-up {
+    top: -116px !important;
+    /*헤더 높이와 같이*/
+  }
+
+.nav-down {
+top: 0px !important;
+}
+
 /*header*/
 #header{
     border-bottom: 2px solid #333;
+    padding-top: 116px;
 }
 .header_inner{
     width: 1432px;
@@ -94,16 +115,81 @@ body::-webkit-scrollbar-thumb {
     left: 0;
     transform: translateY(-50%);
 }
-.header_inner ul{
+.header_inner .gnb>li:after {
+  display:block;
+  content: '';
+  border-bottom: solid 2px #000;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+.header_inner .gnb>li:hover:after {
+    transform: scaleX(1); 
+}
+.header_inner .gnb>li a:hover:after{
+    color: #333;
+}
+.header_inner .gnb>li:after{  transform-origin:  0% 50%; }
+
+#header .gnb{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.header_inner ul li{
+.header_inner .gnb>li {
     font-size: 20px;
-    padding: 20px 85px;
+    padding: 18px 85px;
     font-weight: 800;
+    display: inline-block;
+    margin: 0;
+    text-transform: uppercase;
+    position: relative;
 }
+
+.header_inner .sub {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px; /* 박스 크기 유지 */
+    background-color: #000;
+    display: none;
+    z-index: 30;
+    padding: 30px 0;
+}
+
+.header_inner .sub>li {
+    position: relative;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.header_inner .sub>li a {
+
+    display: inline-block; /* a 태그를 inline-block으로 설정 */
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    text-decoration: none; /* 기본 밑줄 제거 */
+    position: relative; /* 포지션을 상대적으로 설정 */
+    box-sizing: border-box; /* 패딩과 테두리를 너비에 포함 */
+}
+
+.header_inner .sub>li a::after {
+    content: '';
+    position: absolute;
+    width: 0; /* 초기 밑줄 길이 */
+    height: 1px; /* 밑줄 두께 */
+    bottom: 0; /* 텍스트 아래에 위치 */
+    left: 0;
+    background-color: #fff; /* 밑줄 색상 */
+    transition: width 250ms ease-in-out; /* 밑줄 애니메이션 효과 */
+}
+
+.header_inner .sub>li a:hover::after {
+    width: 100%; /* 호버 시 텍스트 길이만큼 밑줄 확장 */
+}
+
 
 /*whole_product*/
 #whole_product{
